@@ -1,0 +1,10 @@
+2024-12-27 00:29:08 - WorkDayRepository - ERROR - [work_day_dao.py:25] - Error while getting or creating work day '2025-01-04': (builtins.TypeError) SQLite Date type only accepts Python date objects as input.
+[SQL: INSERT INTO planner_work_day (id, str_date, date, week, line_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'date': '2025-01-04', 'week': None, 'str_date': None, 'line_id': None}]] - User: SYSTEM
+2024-12-27 00:30:18 - WorkDayRepository - ERROR - [work_day_dao.py:25] - Error while getting or creating work day '2025-01-04': (builtins.TypeError) SQLite Date type only accepts Python date objects as input.
+[SQL: INSERT INTO planner_work_day (id, str_date, date, week, line_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: [{'line_id': 'lxL6Pz3KSOmnefj', 'date': '2025-01-04', 'week': None, 'str_date': None}]] - User: SYSTEM
+2024-12-27 00:33:28 - WorkDayRepository - ERROR - [work_day_dao.py:26] - Error while getting or creating work day '2025-01-04': (sqlite3.IntegrityError) UNIQUE constraint failed: planner_work_day.date, planner_work_day.line_id
+[SQL: INSERT INTO planner_work_day (id, str_date, date, week, line_id) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('mdLQXjigW1SUDW4', '2025-01-04', '2024-12-27', 1, 'lxL6Pz3KSOmnefj')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: SYSTEM

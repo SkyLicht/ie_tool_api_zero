@@ -1,0 +1,196 @@
+2024-12-25 11:52:40 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:52:40 - FastApi - ERROR - [run_server.py:73] - Error starting server: No module named 'core' - User: UnknownUser
+2024-12-25 11:53:27 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:53:42 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:55:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 11:55:28 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:55:50 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 11:55:51 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:56:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 11:56:17 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 11:59:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:00:01 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:00:02 - FastApi - ERROR - [run_server.py:73] - Error starting server: Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+ - User: UnknownUser
+2024-12-25 12:00:18 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:00:19 - FastApi - ERROR - [run_server.py:73] - Error starting server: Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+ - User: UnknownUser
+2024-12-25 12:01:49 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:02:32 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:02:33 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:03:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:03:02 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:03:07 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:03:57 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:07:21 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:07:22 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:08:40 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:08:41 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:21:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:21:28 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:34:36 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:35:51 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:35:52 - FastApi - ERROR - [run_server.py:73] - Error starting server: A path prefix must start with '/' - User: UnknownUser
+2024-12-25 12:36:38 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 12:41:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 12:41:17 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 18:09:06 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 19:57:12 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 20:00:28 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 20:00:29 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 20:11:40 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 20:11:43 - FastApi - INFO - [run_server.py:64] - Starting server on 127.0.0.1:8000 - User: UnknownUser
+2024-12-25 20:12:53 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 20:13:26 - FastApi - INFO - [run_server.py:64] - Starting server on 172.25.96.1:3003 - User: UnknownUser
+2024-12-25 20:20:09 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 20:20:11 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 20:53:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 20:53:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 21:00:05 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 21:00:07 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 21:02:15 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 21:02:17 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 21:11:02 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-25 21:11:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 21:11:06 - FastApi - ERROR - [run_server.py:73] - Error starting server: cannot import name 'api_user_route_role' from 'core.data.models.it_tool_orm_models' (C:\data\code\ie_tool_api\core\data\models\it_tool_orm_models.py) - User: UnknownUser
+2024-12-25 21:11:14 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-25 21:11:15 - FastApi - ERROR - [run_server.py:73] - Error starting server: cannot import name 'api_user_route_role' from 'core.data.models.it_tool_orm_models' (C:\data\code\ie_tool_api\core\data\models\it_tool_orm_models.py) - User: UnknownUser
+2024-12-25 21:13:07 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:06:25 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:19:32 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:19:34 - FastApi - ERROR - [run_server.py:73] - Error starting server: Invalid args for response field! Hint: check that <class 'core.data.models.it_tool_orm_models.RouterAccessModel'> is a valid Pydantic field type. If you are using a return type annotation that is not a valid Pydantic field (e.g. Union[Response, dict, None]) you can disable generating the response model from the type annotation with the path operation decorator parameter response_model=None. Read more: https://fastapi.tiangolo.com/tutorial/response-model/ - User: UnknownUser
+2024-12-26 12:20:18 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:20:19 - FastApi - ERROR - [run_server.py:73] - Error starting server: Invalid args for response field! Hint: check that <class 'core.api.endpoints.router_endpoint.RouterAccessCreateRequest'> is a valid Pydantic field type. If you are using a return type annotation that is not a valid Pydantic field (e.g. Union[Response, dict, None]) you can disable generating the response model from the type annotation with the path operation decorator parameter response_model=None. Read more: https://fastapi.tiangolo.com/tutorial/response-model/ - User: UnknownUser
+2024-12-26 12:21:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:24:15 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:24:16 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:32:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:33:56 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:37:20 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:37:21 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:39:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:39:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:40:38 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:40:40 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 12:41:32 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 12:41:32 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:01:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:02:13 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:02:48 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:02:49 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:15:29 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:15:29 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:16:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:17:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:20:28 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:20:33 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:23:37 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:23:38 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:24:06 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:27:06 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:40:11 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:40:14 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:54:49 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:54:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:56:37 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:56:54 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:57:44 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:57:45 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 13:59:05 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 13:59:06 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:00:51 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:00:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:01:06 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:01:07 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:05:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:05:18 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:06:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:07:08 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:07:23 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:07:25 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:09:18 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:09:19 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 14:09:45 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 14:10:22 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:08:49 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:08:50 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:14:43 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:14:44 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:18:40 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:18:45 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:20:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:20:28 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:21:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:21:34 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:25:45 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:25:46 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:35:42 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:35:43 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:37:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:37:29 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:37:42 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:37:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:56:50 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:56:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 15:59:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 15:59:27 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 16:00:09 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 16:00:10 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 16:00:48 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 16:00:48 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-26 16:02:28 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-26 16:02:29 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:16:46 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:16:48 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:19:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:19:19 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:20:24 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:20:25 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:29:04 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:29:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:30:13 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:30:14 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:30:56 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:31:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:33:21 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:33:22 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:34:45 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:35:04 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:36:00 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:36:01 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:36:23 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:36:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 00:37:39 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 00:39:57 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:09:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:09:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:10:55 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:10:56 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:11:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:11:27 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:13:09 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:13:10 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:14:13 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:14:13 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:15:05 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:15:08 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:18:56 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:18:57 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:19:58 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:20:06 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:22:15 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:22:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:28:45 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:28:46 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:33:50 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:33:56 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:34:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:36:21 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser
+2024-12-27 09:37:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: UnknownUser
+2024-12-27 09:37:04 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: UnknownUser

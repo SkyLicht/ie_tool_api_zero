@@ -1,0 +1,18 @@
+[
+  {
+    "id": "WgN45ZIRKg17a2L",
+    "name": "admin"
+  },
+  {
+    "id": "zvMPMFiG0ERPAim",
+    "name": "read"
+  },
+  {
+    "id": "OZCyfXNbyKbUQOK",
+    "name": "edit"
+  },
+  {
+    "id": "0djAjh7iDrQsKYl",
+    "name": "delete"
+  }
+]
