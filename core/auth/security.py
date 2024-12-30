@@ -15,7 +15,7 @@ from core.logger_manager import LoggerManager
 # Secret key to encode JWT tokens
 SECRET_KEY = "4f1dada27ca17e21e166dc7e7c8978e3d32d25832432b3fcde66e988c4c9de35"  # Replace with your own secret key
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 69 * 24
+ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 1 week
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 

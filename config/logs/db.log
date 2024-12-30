@@ -1,1 +1,549 @@
-2024-12-27 09:28:53 - DatabaseLogger - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: SYSTEM
+2024-12-29 09:26:53 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2024-12-29 09:27:01 - LineRepository - INFO - [line_repository.py:18] - Lines found: 8 - User: iradi
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J01 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J02 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J03 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J05 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J06 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J07 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J08 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line J09 created - User: SYSTEM
+2024-12-29 09:31:32 - DatabaseLogger - INFO - [line_dao.py:39] - Line T01 created - User: SYSTEM
+2024-12-29 09:32:30 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 09:58:27 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2024-12-29 11:17:02 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 11:17:02 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 11:30:29 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 11:30:31 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 11:30:33 - LineRepository - INFO - [line_repository.py:18] - Lines found: 9 - User: iradi
+2024-12-29 12:07:36 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:10:18 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:16:05 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:16:10 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:17:06 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:17:53 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:17:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:17:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:17:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 12:18:02 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 13:34:39 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 13:42:04 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 13:43:00 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 14:18:55 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 14:47:53 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 14:48:14 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 14:48:43 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:05:28 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:06:50 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:08:39 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:08:45 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:12:31 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:16:24 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:18:16 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:18:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:18:42 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 15:57:22 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:00:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:01:55 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:02:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:02:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:02:56 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:07:04 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:07:04 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:20:50 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:20:50 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:24:46 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:29:15 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:29:15 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:30:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:30:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:30:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:30:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:31:57 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:40:02 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 16:51:02 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:01:18 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:01:27 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:01:37 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:01:40 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:02:25 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:02:40 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:02:55 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:06:13 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:06:28 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 17:28:55 - LayoutRepository - INFO - [layout_dao.py:18] - Layout for J01 line created - User: iradi
+2024-12-29 17:30:49 - LayoutRepository - INFO - [layout_dao.py:18] - Layout for J01 line created - User: iradi
+2024-12-29 17:48:24 - LayoutRepository - INFO - [layout_dao.py:18] - Layout for J01 line created - User: iradi
+2024-12-29 17:49:28 - LayoutRepository - INFO - [layout_dao.py:18] - Layout for J01 line created - User: iradi
+2024-12-29 17:53:13 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 18:04:44 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 18:07:28 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 18:18:56 - LayoutRepository - ERROR - [layout_dao.py:22] - Error while creating layout 'lxL6Pz3KSOmnefj': (sqlite3.IntegrityError) NOT NULL constraint failed: layouts.is_active
+[SQL: INSERT INTO layouts (id, line_id, user_id, created_at, updated_at) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('FIJ1pEuHG0XVJ2L', 'lxL6Pz3KSOmnefj', 'bqBHmsyWNxADuck', '2024-12-30 00:49:27.382700', '2024-12-30 00:49:27.382793')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: iradi
+2024-12-29 18:21:55 - LayoutRepository - INFO - [layout_dao.py:18] - Layout for J01 line created - User: iradi
+2024-12-29 18:38:39 - LayoutRepository - ERROR - [layout_endpoint.py:35] - Stations not found - User: iradi
+2024-12-29 20:01:31 - LayoutRepository - INFO - [layout_endpoint.py:44] - Operations found: 64 - User: iradi
+2024-12-29 20:06:01 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:06:01 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:25:17 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:25:17 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:28:05 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:28:05 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:28:41 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:28:41 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:33:48 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:33:48 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:33:48 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:33:48 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:51:27 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:51:27 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 20:56:30 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 20:56:30 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 21:39:34 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 21:39:34 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 21:40:27 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 21:40:27 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 21:40:46 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 21:40:46 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 21:43:09 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2024-12-29 21:43:18 - LayoutRepository - ERROR - [layout_endpoint.py:39] - Stations not found - User: iradi
+2024-12-29 21:48:38 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 21:48:38 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:13:49 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2024-12-29 22:14:42 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-29 22:14:51 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:14:51 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:25:11 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:25:11 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:30:44 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:30:44 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:41:01 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:41:01 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:45:08 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:45:08 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:50:13 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:50:13 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:51:07 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:51:07 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:53:09 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:53:09 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:53:21 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:53:21 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:56:13 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:56:13 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 22:56:15 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 22:56:15 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:06:59 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:06:59 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:07:09 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:07:09 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:17:47 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:17:47 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:33:22 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:33:22 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:35:08 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:35:08 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:38:22 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:38:22 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-29 23:46:05 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-29 23:46:05 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-30 00:00:45 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-30 00:00:45 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-30 00:34:50 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-30 00:34:50 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-30 00:51:47 - LayoutRepository - INFO - [layout_endpoint.py:56] - Operations found: 64 - User: iradi
+2024-12-30 00:51:47 - LayoutRepository - INFO - [layout_endpoint.py:63] - Areas found: 7 - User: iradi
+2024-12-30 01:08:52 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-B created - User: iradi
+2024-12-30 01:09:16 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-B created - User: iradi
+2024-12-30 01:13:03 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2024-12-30 01:14:43 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2024-12-30 01:14:43 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2024-12-30 01:15:33 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 01:15:33 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2024-12-30 01:16:12 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 01:16:12 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-1 created - User: iradi
+2024-12-30 01:16:12 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2024-12-30 01:16:12 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-3 created - User: iradi
+2024-12-30 01:18:06 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:18:06 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:18:50 - LayoutRepository - INFO - [layout_endpoint.py:75] - Stations found: 4 - User: iradi
+2024-12-30 01:20:49 - LayoutRepository - ERROR - [layout_endpoint.py:64] - Layout not found: lxL6Pz3KSOmnefj - User: iradi
+2024-12-30 01:20:58 - LayoutRepository - ERROR - [layout_endpoint.py:64] - Layout not found: lxL6Pz3KSOmnefj - User: iradi
+2024-12-30 01:23:07 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 01:24:01 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:40:49 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:41:21 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:41:54 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:42:10 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:42:27 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 01:42:28 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:42:28 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:42:28 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:42:28 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:42:32 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 01:42:53 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J02 line created - User: iradi
+2024-12-30 01:42:53 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:42:53 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:42:53 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:42:53 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station Battery Insert created - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-1 created - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-3 created - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station Router created - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-T1 created - User: iradi
+2024-12-30 01:43:17 - LayoutRepository - INFO - [station_dao.py:35] - Station Depalletizer created - User: iradi
+2024-12-30 01:43:22 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:43:22 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:43:40 - LayoutRepository - INFO - [layout_endpoint.py:67] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:45:48 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:45:48 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:45:53 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:45:53 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:46:16 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:46:16 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:46:51 - LayoutRepository - INFO - [layout_endpoint.py:94] - Operations found: 64 - User: iradi
+2024-12-30 01:46:51 - LayoutRepository - INFO - [layout_endpoint.py:101] - Areas found: 7 - User: iradi
+2024-12-30 01:46:51 - LayoutRepository - INFO - [layout_endpoint.py:67] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:49:47 - LayoutRepository - INFO - [layout_endpoint.py:69] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:52:17 - LayoutRepository - INFO - [layout_endpoint.py:79] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:53:19 - LayoutRepository - INFO - [layout_endpoint.py:80] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:54:36 - LayoutRepository - INFO - [layout_endpoint.py:81] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 01:54:57 - LayoutRepository - INFO - [layout_endpoint.py:82] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:00:53 - LayoutRepository - INFO - [layout_endpoint.py:82] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:03:19 - LayoutRepository - INFO - [layout_endpoint.py:111] - Operations found: 64 - User: iradi
+2024-12-30 02:03:19 - LayoutRepository - INFO - [layout_endpoint.py:118] - Areas found: 7 - User: iradi
+2024-12-30 02:03:19 - LayoutRepository - INFO - [layout_endpoint.py:84] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:05:12 - LayoutRepository - INFO - [station_dao.py:35] - Station Battery Insert created - User: iradi
+2024-12-30 02:05:12 - LayoutRepository - INFO - [station_dao.py:35] - Station Back Plate created - User: iradi
+2024-12-30 02:05:33 - LayoutRepository - INFO - [layout_endpoint.py:36] - No changes in stations list - User: iradi
+2024-12-30 02:05:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Back Plate updated - User: iradi
+2024-12-30 02:05:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Battery Insert updated - User: iradi
+2024-12-30 02:05:59 - LayoutRepository - INFO - [station_dao.py:35] - Station Loader created - User: iradi
+2024-12-30 02:06:37 - LayoutRepository - INFO - [station_dao.py:56] - Station Battery Insert updated - User: iradi
+2024-12-30 02:06:37 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:06:37 - LayoutRepository - INFO - [station_dao.py:46] - Station 97L6UVKQihY2HEQ deleted - User: iradi
+2024-12-30 02:08:49 - LayoutRepository - INFO - [layout_endpoint.py:111] - Operations found: 64 - User: iradi
+2024-12-30 02:08:49 - LayoutRepository - INFO - [layout_endpoint.py:118] - Areas found: 7 - User: iradi
+2024-12-30 02:08:49 - LayoutRepository - INFO - [layout_endpoint.py:84] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:09:09 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2024-12-30 02:09:09 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:09:09 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-B1 created - User: iradi
+2024-12-30 02:09:09 - LayoutRepository - INFO - [station_dao.py:46] - Station EzSP2dlEuXSyjla deleted - User: iradi
+2024-12-30 02:10:11 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:10:11 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:10:11 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:10:11 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-1 created - User: iradi
+2024-12-30 02:10:34 - LayoutRepository - INFO - [layout_endpoint.py:36] - No changes in stations list - User: iradi
+2024-12-30 02:10:59 - LayoutRepository - INFO - [layout_endpoint.py:36] - No changes in stations list - User: iradi
+2024-12-30 02:11:20 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:11:20 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:11:20 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:11:20 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:11:20 - LayoutRepository - INFO - [station_dao.py:35] - Station Radial created - User: iradi
+2024-12-30 02:11:29 - LayoutRepository - INFO - [layout_endpoint.py:36] - No changes in stations list - User: iradi
+2024-12-30 02:12:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:12:59 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:12:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:12:59 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:12:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:13:09 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:13:09 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:13:09 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:13:09 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:13:09 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:13:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:13:17 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:13:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:13:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:13:17 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:14:03 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:14:03 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:14:03 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:14:15 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:21:42 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:21:42 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:21:42 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:23:02 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:23:02 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:23:02 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:23:22 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:23:22 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:23:22 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:28:20 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:28:20 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:28:20 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:28:37 - LayoutRepository - INFO - [layout_endpoint.py:37] - No need to update stations - User: iradi
+2024-12-30 02:28:43 - LayoutRepository - INFO - [layout_endpoint.py:37] - No need to update stations - User: iradi
+2024-12-30 02:28:45 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:28:45 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:28:45 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:28:48 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:28:48 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:28:48 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:29:29 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:29:29 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:29:29 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:29:29 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:29:30 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:29:30 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-3 created - User: iradi
+2024-12-30 02:29:32 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:29:32 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:29:32 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:29:38 - LayoutRepository - INFO - [layout_endpoint.py:37] - No need to update stations - User: iradi
+2024-12-30 02:29:41 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:29:41 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:29:41 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:30:02 - LayoutRepository - INFO - [layout_endpoint.py:113] - Operations found: 64 - User: iradi
+2024-12-30 02:30:02 - LayoutRepository - INFO - [layout_endpoint.py:120] - Areas found: 7 - User: iradi
+2024-12-30 02:30:02 - LayoutRepository - INFO - [layout_endpoint.py:86] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:30:55 - LayoutRepository - INFO - [layout_endpoint.py:116] - Operations found: 64 - User: iradi
+2024-12-30 02:30:55 - LayoutRepository - INFO - [layout_endpoint.py:123] - Areas found: 7 - User: iradi
+2024-12-30 02:30:55 - LayoutRepository - INFO - [layout_endpoint.py:89] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:31:00 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2024-12-30 02:31:02 - LayoutRepository - INFO - [layout_endpoint.py:116] - Operations found: 64 - User: iradi
+2024-12-30 02:31:02 - LayoutRepository - INFO - [layout_endpoint.py:123] - Areas found: 7 - User: iradi
+2024-12-30 02:31:02 - LayoutRepository - INFO - [layout_endpoint.py:89] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:31:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2024-12-30 02:31:07 - LayoutRepository - INFO - [layout_endpoint.py:116] - Operations found: 64 - User: iradi
+2024-12-30 02:31:07 - LayoutRepository - INFO - [layout_endpoint.py:123] - Areas found: 7 - User: iradi
+2024-12-30 02:31:07 - LayoutRepository - INFO - [layout_endpoint.py:89] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:31:17 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:31:19 - LayoutRepository - INFO - [layout_endpoint.py:116] - Operations found: 64 - User: iradi
+2024-12-30 02:31:19 - LayoutRepository - INFO - [layout_endpoint.py:123] - Areas found: 7 - User: iradi
+2024-12-30 02:31:19 - LayoutRepository - INFO - [layout_endpoint.py:89] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:35] - Station FT created - User: iradi
+2024-12-30 02:32:14 - LayoutRepository - INFO - [station_dao.py:35] - Station ICT created - User: iradi
+2024-12-30 02:32:16 - LayoutRepository - INFO - [layout_endpoint.py:116] - Operations found: 64 - User: iradi
+2024-12-30 02:32:16 - LayoutRepository - INFO - [layout_endpoint.py:123] - Areas found: 7 - User: iradi
+2024-12-30 02:32:16 - LayoutRepository - INFO - [layout_endpoint.py:89] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 02:32:39 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:43:58 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 1 - User: iradi
+2024-12-30 02:47:15 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:47:18 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:48:45 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 1 - User: iradi
+2024-12-30 02:54:18 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: p95auGiSAwbpdev - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:19 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: p95auGiSAwbpdev - User: iradi
+2024-12-30 02:54:42 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:54:42 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 2 - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T01 line created - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: JlwVcrjLEY0R4Rz - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:45 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: JlwVcrjLEY0R4Rz - User: iradi
+2024-12-30 02:54:48 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:54:48 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 3 - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J08 line created - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: swVt5AFjVc7EMAb - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:54:51 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: swVt5AFjVc7EMAb - User: iradi
+2024-12-30 02:54:52 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:54:52 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 4 - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: uo3URpKLHn9DPqu - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:58:59 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: uo3URpKLHn9DPqu - User: iradi
+2024-12-30 02:59:01 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:59:01 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 5 - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J03 line created - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: nxqhbeiklQ7ZuGB - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:59:07 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: nxqhbeiklQ7ZuGB - User: iradi
+2024-12-30 02:59:10 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:59:10 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 6 - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J05 line created - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: nhuYx8QYanP5cDp - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 02:59:14 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 02:59:15 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: nhuYx8QYanP5cDp - User: iradi
+2024-12-30 02:59:16 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 02:59:16 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 7 - User: iradi
+2024-12-30 03:02:21 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 03:02:21 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 03:02:21 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: pxv3MM633MVAgQ4 - User: iradi
+2024-12-30 03:02:31 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 03:02:31 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 03:02:31 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: JlwVcrjLEY0R4Rz - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J09 line created - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: X8zm7eNotdSdVzl - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:140] - Operations found: 64 - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:147] - Areas found: 7 - User: iradi
+2024-12-30 03:06:43 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: X8zm7eNotdSdVzl - User: iradi
+2024-12-30 03:06:44 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:06:44 - LayoutRepository - INFO - [layout_endpoint.py:113] - Layouts found: 8 - User: iradi
+2024-12-30 03:08:27 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:08:27 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 8 - User: iradi
+2024-12-30 03:11:09 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:11:09 - LayoutRepository - ERROR - [layout_endpoint.py:117] - Layouts not found - User: iradi
+2024-12-30 03:11:14 - LayoutRepository - ERROR - [layout_dao.py:23] - Error while creating layout 'lxL6Pz3KSOmnefj': (sqlite3.IntegrityError) NOT NULL constraint failed: layouts.version
+[SQL: INSERT INTO layouts (id, line_id, user_id, is_active, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('SYTxvdjATulBzNV', 'lxL6Pz3KSOmnefj', 'bqBHmsyWNxADuck', 1, '2024-12-30 10:08:26.094294', '2024-12-30 10:08:26.094318')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: iradi
+2024-12-30 03:11:39 - LayoutRepository - ERROR - [layout_dao.py:23] - Error while creating layout 'lxL6Pz3KSOmnefj': (sqlite3.IntegrityError) NOT NULL constraint failed: layouts.version
+[SQL: INSERT INTO layouts (id, line_id, user_id, is_active, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)]
+[parameters: ('KYC6rs49JDHHamj', 'lxL6Pz3KSOmnefj', 'bqBHmsyWNxADuck', 1, '2024-12-30 10:08:26.094294', '2024-12-30 10:08:26.094318')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: RVWPahssZE9mO5M - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:13:59 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: RVWPahssZE9mO5M - User: iradi
+2024-12-30 03:14:10 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:10 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 1 - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J02 line created - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: X0bWull9elI27hn - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:13 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: X0bWull9elI27hn - User: iradi
+2024-12-30 03:14:16 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:16 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 2 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J03 line created - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: dSxAgxI8IkDive7 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:19 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: dSxAgxI8IkDive7 - User: iradi
+2024-12-30 03:14:21 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:21 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 3 - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J05 line created - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cMxak00sMyECjrL - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:24 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cMxak00sMyECjrL - User: iradi
+2024-12-30 03:14:25 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:25 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 4 - User: iradi
+2024-12-30 03:14:28 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J06 line created - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: mXSdSpETnZPYdiO - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:29 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: mXSdSpETnZPYdiO - User: iradi
+2024-12-30 03:14:30 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:30 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 5 - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J07 line created - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: NdVwokrVGCIJNgA - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:32 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: NdVwokrVGCIJNgA - User: iradi
+2024-12-30 03:14:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:33 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 6 - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J08 line created - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: qrhhYV0kojVylBI - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:38 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: qrhhYV0kojVylBI - User: iradi
+2024-12-30 03:14:39 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:39 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 7 - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J09 line created - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: jmvm6m2cLVXKrQD - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:42 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: jmvm6m2cLVXKrQD - User: iradi
+2024-12-30 03:14:44 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:44 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 8 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T01 line created - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: xD1hmWMslfozkY7 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:14:48 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: xD1hmWMslfozkY7 - User: iradi
+2024-12-30 03:14:49 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:14:49 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:15:08 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:15:08 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:15:16 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:15:16 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:15:16 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: RVWPahssZE9mO5M - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station Back Plate created - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-B created - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station Battery Insert created - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station Loader created - User: iradi
+2024-12-30 03:15:33 - LayoutRepository - INFO - [station_dao.py:35] - Station CPU Assy created - User: iradi
+2024-12-30 03:15:36 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:15:36 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:15:36 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: RVWPahssZE9mO5M - User: iradi
+2024-12-30 03:15:39 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:15:39 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:16:28 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2024-12-30 03:16:28 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2024-12-30 03:16:28 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: RVWPahssZE9mO5M - User: iradi
+2024-12-30 03:22:15 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:15 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:17 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:17 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:19 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:19 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:35 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:35 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:40 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:40 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:53 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:53 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:22:55 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:22:55 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:23:14 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:23:14 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:23:16 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:23:16 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:23:19 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:23:19 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2024-12-30 03:26:55 - LineRepository - INFO - [line_repository.py:21] - Lines found: 9 - User: iradi
+2024-12-30 03:26:55 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi

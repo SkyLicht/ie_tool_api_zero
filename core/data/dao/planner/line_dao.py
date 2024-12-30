@@ -1,6 +1,7 @@
 from typing import List
 
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy.orm import joinedload
 
 from core.data.models.it_tool_orm_models import LineModel
 
@@ -43,3 +44,8 @@ class LineDAO:
 
     def get_all(self)-> List[LineModel]:
         return self.session.query(LineModel).all()
+
+    def get_all_with_factory(self):
+        return (self.session.query(LineModel)
+                .options(joinedload(LineModel.factory))
+                .all())

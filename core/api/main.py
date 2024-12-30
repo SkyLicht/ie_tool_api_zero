@@ -9,7 +9,8 @@ from starlette.middleware.cors import CORSMiddleware
 
 from core.api.dependency import get_scoped_db_session
 from core.api.endpoints import user_endpoint, router_endpoint
-from core.api.endpoints.planner import planner_endpoint
+from core.api.endpoints.layout import layout_endpoint
+from core.api.endpoints.planner import planner_endpoint, platform_endpoint
 from core.auth.security import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token
 from core.data.schemas.token_schema import Token
 
@@ -24,7 +25,7 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-# @app.middleware("http")
+#@app.middleware("http")
 # async def add_process_time_header(request: Request, call_next):
 #     start_time = time.perf_counter()
 #     response = await call_next(request)
@@ -48,6 +49,16 @@ app.include_router(
 app.include_router(
     prefix='/api/v1',
     router= planner_endpoint.router
+)
+
+app.include_router(
+    prefix='/api/v1',
+    router= platform_endpoint.router
+)
+
+app.include_router(
+    prefix='/api/v1',
+    router= layout_endpoint.router
 )
 
 @app.get("/")

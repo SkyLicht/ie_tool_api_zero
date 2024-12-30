@@ -5,7 +5,7 @@ import uvicorn
 from core.logger_manager import LoggerManager
 
 # Initialize the logger
-app_logger = LoggerManager.get_logger(name="FastApi", log_file="config/logs/api.log")
+app_logger = LoggerManager.get_logger(name="FastApi", log_file="api", username="SYSTEM")
 
 def start_server():
     _host = None

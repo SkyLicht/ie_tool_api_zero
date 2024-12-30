@@ -28,6 +28,8 @@ async def get_user_by_token(
 
 
 
+
+
 class AddRouterRequest(BaseModel):
     user_name: str
     route_pattern: str
@@ -43,3 +45,5 @@ async def add_router_to_user(
         repo.add_route_to_user(body.user_name, body.route_pattern, body.role_name)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+    finally:
+        repo.session.close()

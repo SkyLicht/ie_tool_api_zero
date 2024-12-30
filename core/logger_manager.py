@@ -45,6 +45,7 @@ class LoggerManager:
         Retrieve or create a logger instance configured with both console
         and rotating file handlers. Adds a username context to logs.
 
+        :param log_file_name:
         :param name: The name of the logger (default "AppLogger").
         :param log_file: Optional path to the log file. If not provided, uses "core.log".
         :param max_file_size: Max size of the log file in bytes before rotation.
@@ -54,22 +55,28 @@ class LoggerManager:
         :param username: The username to include in log records.
         :return: A configured logger instance.
         """
-        if log_file is None:
+
+        # todo: remove log_file
+        if log_file is None and log_file_name is None:
             log_file = os.path.join('config', 'logs', 'core.log')
 
-        if log_file_name is not None:
+        if log_file_name is not None and log_file is None:
             if log_file_name == 'db':
                 log_file = os.path.join('config', 'logs', 'db.log')
-            log_file = os.path.join('config', 'logs', log_file_name)
+            elif log_file_name == 'app':
+                log_file = os.path.join('config', 'logs', 'app.log')
+            elif log_file_name == 'api':
+                log_file = os.path.join('config', 'logs', 'api.log')
+
 
         with cls._lock:
             if name in cls._instances:
                 # Update username if an instance already exists
                 logger = cls._instances[name]
                 for handler in logger.handlers:
-                    for filter in handler.filters:
-                        if isinstance(filter, UserContextFilter):
-                            filter.username = username
+                    for _filter in handler.filters:
+                        if isinstance(_filter, UserContextFilter):
+                            _filter.username = username
                 return logger
 
             # Create a new logger
@@ -105,8 +112,8 @@ class LoggerManager:
                 logger.addHandler(file_handler)
 
             # Add user context filter
-            filter = UserContextFilter(username)
-            logger.addFilter(filter)
+            _filter = UserContextFilter(username)
+            logger.addFilter(_filter)
 
             # Cache the logger
             cls._instances[name] = logger

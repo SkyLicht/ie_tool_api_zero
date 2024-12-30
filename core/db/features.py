@@ -3,6 +3,7 @@ import json
 from core.data.dao.permission_dao import PermissionDAO
 from core.data.dao.planner.facorty_dao import FactoryDAO
 from core.data.dao.planner.line_dao import LineDAO
+from core.data.dao.planner.platform_dao import PlatformDAO
 from core.data.dao.role_dao import RoleDAO
 from core.data.dao.router_access_dao import RouterAccessDAO
 from core.data.models.it_tool_orm_models import UserModel, PermissionModel, RoleModel, RouterAccessModel, \
@@ -186,4 +187,32 @@ def create_lines_from_json():
 
     except FileNotFoundError:
         logger_db.error("lines.json file not found")
+        return
+
+
+def create_platforms_from_json():
+    try:
+        # Open permissions.json file
+        with open('config/data/dict/platforms_dict.json') as f:
+            platforms = json.load(f)
+
+        # Create default permissions
+
+        dao = PlatformDAO(IETOOLDBConnection().get_session())
+        dao.create_all([PlatformModel(
+            id=platform['id'],
+            f_n=platform['f_n'],
+            platform=platform["platform"],
+            sku=platform['sku'],
+            uph=platform['uph'],
+            cost=platform['cost'],
+            components=platform['components'],
+            components_list_id=platform['components_list_id'],
+            width=platform['width'],
+            height=platform['height'],
+
+        ) for platform in platforms])
+
+    except FileNotFoundError:
+        logger_db.error("platforms.json file not found")
         return

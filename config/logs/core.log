@@ -1,98 +1,411 @@
-2024-12-25 12:41:21 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*'}]} - User: SYSTEM
-2024-12-25 12:47:22 - db - INFO - [user_repository.py:53] - User found: {'username': 'guest', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/router-access', 'allowed_ips': '*'}, {'route_pattern': '/api/v1/permission', 'allowed_ips': '*'}, {'route_pattern': '/api/v1/user', 'allowed_ips': '*'}, {'route_pattern': '/api/v1/role', 'allowed_ips': '*'}]} - User: SYSTEM
-2024-12-25 12:47:40 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*'}]} - User: SYSTEM
-2024-12-25 20:53:27 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*'}]} - User: iradi
-2024-12-25 21:02:22 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*'}]} - User: iradi
-2024-12-25 21:13:15 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:22:54 - api - INFO - [router_access_dao.py:40] - Router access "workplan" created - User: UnknownUser
-2024-12-26 12:34:43 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:34:43 - api - INFO - [router_access_dao.py:40] - Router access "workplan" created - User: UnknownUser
-2024-12-26 12:34:59 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:37:25 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:37:29 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:39:06 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:40:43 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 12:41:35 - db - INFO - [user_repository.py:53] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:16:29 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:20:07 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:20:07 - api - INFO - [router_access_dao.py:40] - Router access "*" created - User: UnknownUser
-2024-12-26 13:20:15 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:20:37 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:21:53 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:23:44 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:23:56 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:27:14 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:27:25 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:28:05 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:28:34 - db - INFO - [user_repository.py:64] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:28:34 - api - ERROR - [router_access_dao.py:44] - Error while creating router access 'workplan': (sqlite3.IntegrityError) UNIQUE constraint failed: api_router_access.route_pattern
-[SQL: INSERT INTO api_router_access (id, route_pattern, allowed_ips) VALUES (?, ?, ?)]
-[parameters: ('UVZaRNqm4xVdnlP', 'workplan', '*')]
-(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: UnknownUser
-2024-12-26 13:28:34 - api - ERROR - [user_dao.py:59] - Error while adding route 'workplan' to user 'iradi': (sqlite3.IntegrityError) UNIQUE constraint failed: api_router_access.route_pattern
-[SQL: INSERT INTO api_router_access (id, route_pattern, allowed_ips) VALUES (?, ?, ?)]
-[parameters: ('UVZaRNqm4xVdnlP', 'workplan', '*')]
-(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: UnknownUser
-2024-12-26 13:40:24 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:40:25 - api - INFO - [user_dao.py:43] - Route 'OTIIIhMg3goyqzP' added to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0' - User: UnknownUser
-2024-12-26 13:41:28 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:41:28 - api - ERROR - [user_dao.py:56] - Error while adding route 'OTIIIhMg3goyqzP' to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0': (sqlite3.IntegrityError) UNIQUE constraint failed: api_user_route_role.user_id, api_user_route_role.route_id, api_user_route_role.role_id
-[SQL: INSERT INTO api_user_route_role (user_id, route_id, role_id) VALUES (?, ?, ?)]
-[parameters: ('bqBHmsyWNxADuck', 'OTIIIhMg3goyqzP', 'PftuUbK8BESkSo0')]
-(Background on this error at: https://sqlalche.me/e/20/gkpj) - User: UnknownUser
-2024-12-26 13:43:36 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:55:16 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:56:55 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:57:48 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 13:59:10 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:00:54 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:01:08 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:05:21 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:05:23 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:07:10 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:07:27 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 14:10:26 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '/api/v1/all', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'workplan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:09:55 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': []} - User: iradi
-2024-12-26 15:09:55 - api - INFO - [router_access_dao.py:40] - Router access "*" created - User: UnknownUser
-2024-12-26 15:10:16 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': []} - User: iradi
-2024-12-26 15:10:16 - api - INFO - [router_access_dao.py:40] - Router access "router" created - User: UnknownUser
-2024-12-26 15:10:54 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': []} - User: iradi
-2024-12-26 15:10:54 - api - INFO - [router_access_dao.py:40] - Router access "user" created - User: UnknownUser
-2024-12-26 15:12:09 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': []} - User: iradi
-2024-12-26 15:12:09 - api - INFO - [user_dao.py:41] - Route 'nAfReUIESrCbQ67' added to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0' - User: UnknownUser
-2024-12-26 15:13:45 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:13:45 - api - INFO - [user_dao.py:41] - Route 'HYF0pnwLBHv7UlE' added to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0' - User: UnknownUser
-2024-12-26 15:13:58 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:13:58 - api - INFO - [user_dao.py:41] - Route 'K1qViHKD2Uezywb' added to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0' - User: UnknownUser
-2024-12-26 15:14:52 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:18:48 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:20:32 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:21:37 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:25:49 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:35:46 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:35:46 - api - INFO - [router_access_dao.py:56] - Router access "work_plan" created - User: UnknownUser
-2024-12-26 15:37:35 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:37:54 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:52:40 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:56:55 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 15:59:30 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:00:13 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:00:14 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:00:50 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:01:49 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:01:49 - api - INFO - [user_dao.py:41] - Route 'nLud28PfJP7PGAP' added to user 'bqBHmsyWNxADuck' with role 'PftuUbK8BESkSo0' - User: UnknownUser
-2024-12-26 16:01:55 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:02:31 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:04:38 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:09:54 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:18:59 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 16:33:50 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 17:02:06 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 17:05:30 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 17:11:28 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 17:12:42 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-26 18:19:21 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-27 09:29:11 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-27 09:33:58 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-27 09:36:26 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
-2024-12-27 09:37:06 - db - INFO - [user_repository.py:77] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-28 21:17:36 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:09:10 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:10:18 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:11:14 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:13:34 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:14:27 - db - INFO - [user_repository.py:78] - User found: {'username': 'iradi', 'is_suspended': False, 'suspension_reason': None, 'api_calls_made': 0, 'api_call_limit': 10000, 'user_routes': [{'route_pattern': 'router', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'user', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': '*', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}, {'route_pattern': 'work_plan', 'allowed_ips': '*', 'role': {'id': 'PftuUbK8BESkSo0', 'name': 'admin', 'permissions': ['delete', 'edit', 'admin', 'read']}}]} - User: iradi
+2024-12-29 09:27:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 09:28:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 09:28:58 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 09:29:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 09:32:30 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 09:58:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 11:17:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 11:17:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 11:30:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 11:30:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 11:30:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:07:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:07:36 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:10:18 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:16:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:16:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:17:06 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:17:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:17:54 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:17:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:17:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 12:18:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 13:34:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 13:42:04 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 13:43:00 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 14:18:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 14:47:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 14:48:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 14:48:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:05:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:06:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:08:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:08:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:12:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:16:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:18:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:18:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:18:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 15:57:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:00:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:01:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:01:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:02:54 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:02:54 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:02:56 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:07:04 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:07:04 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:20:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:20:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:24:46 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:29:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:29:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:30:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:30:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:30:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:30:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:31:57 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:40:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 16:51:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:01:18 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:01:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:01:37 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:01:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:02:25 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:02:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:02:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:06:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:06:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:28:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:30:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:48:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:49:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 17:53:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:04:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:07:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:18:56 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:21:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:26:57 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:27:06 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:38:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 18:38:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:01:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:06:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:25:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:28:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:28:41 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:33:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:33:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:51:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 20:56:30 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 21:39:34 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 21:40:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 21:40:46 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 21:43:18 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 21:48:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:13:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:14:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:25:11 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:30:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:41:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:45:08 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:50:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:51:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:53:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:53:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:56:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 22:56:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:06:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:07:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:17:47 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:33:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:35:08 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:38:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-29 23:46:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:00:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:34:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:40:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:42:30 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:44:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:45:36 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:47:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:47:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:48:25 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:50:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:50:37 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:51:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:51:47 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:51:52 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:52:58 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:53:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 00:57:25 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:06:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:07:41 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:08:52 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:09:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:13:03 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:14:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:15:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:16:12 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:18:06 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:18:50 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:20:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:20:58 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:23:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:24:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:35:06 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:39:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:39:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:40:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:41:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:41:54 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:42:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:43:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:43:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:43:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:45:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:45:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:46:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:46:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:46:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:49:47 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:52:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:53:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:54:36 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 01:54:57 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:00:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:01:04 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:01:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:03:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:03:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:03:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:03:26 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:04:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:05:12 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:05:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:05:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:06:37 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:08:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:08:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:09:08 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:10:11 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:10:34 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:10:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:11:20 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:11:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:12:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:13:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:13:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:14:03 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:14:03 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:14:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:21:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:21:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:23:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:23:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:23:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:23:22 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:20 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:20 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:37 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:28:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:41 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:29:41 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:30:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:30:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:30:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:30:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:00 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:02 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:31:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:32:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:32:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:32:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:32:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:43:58 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:47:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:47:18 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:48:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:18 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:45 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:51 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:52 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:54:52 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:58:58 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:58:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:58:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:58:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:58:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:01 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:07 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 02:59:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:02:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:02:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:02:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:02:31 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:43 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:06:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:08:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:08:27 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:11:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:11:09 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:11:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:11:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:13:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:13:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:13:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:13:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:13:59 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:10 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:13 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:21 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:24 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:25 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:25 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:29 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:30 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:30 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:32 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:38 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:42 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:44 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:48 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:14:49 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:08 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:08 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:33 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:36 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:36 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:15:39 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:16:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:16:28 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:15 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:17 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:35 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:35 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:40 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:53 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:22:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:14 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:16 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:23:19 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:26:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:26:55 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi
+2024-12-30 03:29:05 - db - INFO - [user_repository.py:78] - User found: iradi - User: iradi

@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 
 from sqlalchemy import Column, String, ForeignKey, Table, Boolean, DateTime, Index, Integer, Text, Date, Float, \
-    CheckConstraint, UniqueConstraint, func
+    CheckConstraint, UniqueConstraint, func, JSON, DefaultClause
 from sqlalchemy.orm import relationship
 
 from core.auth.auth_utils import generate_custom_id
@@ -13,6 +13,7 @@ api_role_permissions = Table(
     Column("role_id", String(18), ForeignKey("api_roles.id"), primary_key=True),
     Column("permission_id", String(18), ForeignKey("api_permissions.id"), primary_key=True),
 )
+
 
 # api_user_route_role = Table(
 #     "api_user_route_role",
@@ -74,10 +75,11 @@ class UserModel(Base):
     api_call_limit = Column(Integer, default=10000, nullable=False)  # Maximum API calls allowed
     api_calls_made = Column(Integer, default=0, nullable=False)  # API calls made in the current period
     created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
-    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc),
+                        nullable=False)
 
     # Relationship to UserRouteRole
-    #user_routes = relationship("RouterAccessModel", secondary=api_user_route_role, back_populates="users")
+    # user_routes = relationship("RouterAccessModel", secondary=api_user_route_role, back_populates="users")
     user_route_roles = relationship("UserRouteRoleModel", back_populates="user")
     # Index for performance
     __table_args__ = (
@@ -117,6 +119,7 @@ class UserModel(Base):
             routes.append(route_data)
 
         return routes
+
     def __repr__(self):
         return f"<UserModel(username={self.username}, is_suspended={self.is_suspended}, suspension_reason={self.suspension_reason}, api_calls_made={self.api_calls_made}, api_call_limit={self.api_call_limit})>"
 
@@ -124,12 +127,12 @@ class UserModel(Base):
 class RouterAccessModel(Base):
     __tablename__ = "api_router_access"
     id = Column(String(16), primary_key=True, default=generate_custom_id)
-    type= Column(String(50), nullable=False, default="api")
+    type = Column(String(50), nullable=False, default="api")
     route_pattern = Column(String, unique=True, nullable=False)
     allowed_ips = Column(Text, nullable=False, default="*")  # List of allowed IPs, "*" means all IPs allowed
 
     # Relationship to UserRouteRole
-    #users = relationship("UserModel", secondary=api_user_route_role, back_populates="user_routes")
+    # users = relationship("UserModel", secondary=api_user_route_role, back_populates="user_routes")
     user_route_roles = relationship("UserRouteRoleModel", back_populates="route")
 
     # Index for route pattern
@@ -143,6 +146,7 @@ class RouterAccessModel(Base):
             "route_pattern": self.route_pattern,
             "allowed_ips": self.allowed_ips,
         }
+
     def __repr__(self):
         return f"<RouterAccessModel(route_pattern={self.route_pattern}, allowed_ips={self.allowed_ips})>"
 
@@ -213,6 +217,7 @@ class UserRouteRoleModel(Base):
     def __repr__(self):
         return f"<UserRouteRoleModel(user_id={self.user_id}, route_id={self.route_id}, role_id={self.role_id})>"
 
+
 # Planner ORM Models
 
 
@@ -225,13 +230,11 @@ class FactoryModel(Base):
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     name = Column(String, unique=True, nullable=False)
 
-
     # Potential concurrency or auditing field
     # updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
     # Example relationship if you want to link Factories to WorkDays:
     # work_days = relationship("PlannerWorkDay", back_populates="factory")
-
 
     def __repr__(self):
         return f"<PlannerFactory(name={self.name})>"
@@ -248,13 +251,15 @@ class LineModel(Base):
 
     # Audit fields for creation and modification tracking
     created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
-    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc),
+                        nullable=False)
 
     # Relationship to Factory
     factory = relationship("FactoryModel")
 
     def __repr__(self):
         return f"<LineModel(name={self.name}, factory_id={self.factory_id})>"
+
 
 class WorkDayAuditModel(Base):
     """
@@ -275,6 +280,7 @@ class WorkDayAuditModel(Base):
             f"user_id={self.user_id}, work_day_id={self.work_day_id})>"
         )
 
+
 class WorkDayModel(Base):
     """
     Represents a single day of work for a specific factory and production line.
@@ -283,7 +289,8 @@ class WorkDayModel(Base):
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     str_date = Column(String(10), nullable=False)
-    date = Column(Date, nullable=False, default=datetime.now(timezone.utc)) # Date of the work day (YYYY-MM-DD) utc time
+    date = Column(Date, nullable=False,
+                  default=datetime.now(timezone.utc))  # Date of the work day (YYYY-MM-DD) utc time
     week = Column(Integer, nullable=False)
     line_id = Column(String(16), ForeignKey('planner_lines.id'), nullable=False)
 
@@ -305,6 +312,7 @@ class WorkDayModel(Base):
             f"line={self.line})>"
         )
 
+
 class StateModel(Base):
     """
     Represents the operational state of a line or machine. E.g., RUN, STOPPED, MAINTENANCE.
@@ -316,6 +324,7 @@ class StateModel(Base):
 
     def __repr__(self):
         return f"<PlannerState(name={self.name})>"
+
 
 class ReasonModel(Base):
     """
@@ -329,6 +338,7 @@ class ReasonModel(Base):
 
     def __repr__(self):
         return f"<PlannerReason(description={self.description})>"
+
 
 class WorkHoursModel(Base):
     """
@@ -360,6 +370,7 @@ class WorkHoursModel(Base):
             f"area={self.area}, state_id={self.state_id}, reason_id={self.reason_id})>"
         )
 
+
 class PlatformModel(Base):
     """
     Represents a product platform or model, including SKU, cost, and UPH.
@@ -378,6 +389,13 @@ class PlatformModel(Base):
     width = Column(Float, nullable=True)
     height = Column(Float, nullable=True)
 
+    # factory_id = Column(String(16), ForeignKey('planner_factory.id'), nullable=False)
+
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc),
+                        nullable=False)
+
     __table_args__ = (
         Index('idx_planner_platform_cost_in_service', 'cost', 'in_service'),
     )
@@ -389,6 +407,7 @@ class PlatformModel(Base):
             f"<PlannerPlatform(id={self.id}, f_n={self.f_n}, platform={self.platform}, sku={self.sku}, "
             f"uph={self.uph}, cost={self.cost}, in_service={self.in_service})>"
         )
+
 
 class WorkPlanModel(Base):
     """
@@ -408,22 +427,30 @@ class WorkPlanModel(Base):
     uph_i = Column(Integer, nullable=False)
     start_hour = Column(Integer, nullable=False)
     end_hour = Column(Integer, nullable=False)
-    date = Column(Date, nullable=False, default=datetime.now(timezone.utc)) # Date of the work day (YYYY-MM-DD) utc time
+    date = Column(Date, nullable=False,
+                  default=datetime.now(timezone.utc))  # Date of the work day (YYYY-MM-DD) utc time
     str_date = Column(String(10), nullable=False)
     week = Column(Integer, nullable=False)
     head_count = Column(Integer, nullable=False)
     ft = Column(Integer, nullable=False)
     ict = Column(Integer, nullable=False)
 
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc),
+                        nullable=False)
+
     __table_args__ = (
         CheckConstraint('start_hour >= 0 AND start_hour < 24', name='check_planner_workplan_start_hour'),
         CheckConstraint('end_hour > start_hour AND end_hour <= 24', name='check_planner_workplan_end_hour'),
+        # target_oee must be between 0.1 and 1 (10% to 100%), planned_hours must be greater than 0
+        CheckConstraint('target_oee >= 0.1 AND target_oee <= 1.0', name='check_planner_workplan_target_oee'),
+        CheckConstraint('planned_hours > 0', name='check_planner_workplan_planned_hours'),
     )
 
     line = relationship("LineModel")
     work_day = relationship("WorkDayModel", back_populates="work_plans")
     platform = relationship("PlatformModel", back_populates="work_plans")
-
 
     def __repr__(self):
         return (
@@ -432,6 +459,7 @@ class WorkPlanModel(Base):
             f"target_oee={self.target_oee}, uph_i={self.uph_i}, "
             f"start_hour={self.start_hour}, end_hour={self.end_hour}, week={self.week})>"
         )
+
 
 class OutputModel(Base):
     """
@@ -457,3 +485,316 @@ class OutputModel(Base):
             f"<PlannerOutput(work_day_id={self.work_day_id}, produced_units={self.packing}, "
             f"total_scrap={self.packing_scrap}, oee_achieved={self.oee_achieved})>"
         )
+
+
+# Layout ORM Model
+
+
+#
+#  A R E A
+#
+class AreaModel(Base):
+    __tablename__ = "layout_areas"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    index = Column(Integer)
+    name = Column(String, nullable=False)
+    section = Column(String)
+
+    stations = relationship("StationModel", back_populates="area")
+
+    def __repr__(self):
+        return f"<Area(id={self.id}, name={self.name})>"
+
+
+#
+#  O P E R A T I O N
+#
+class OperationModel(Base):
+    __tablename__ = "layout_operations"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    label = Column(String)
+    name = Column(String, nullable=False)
+    description = Column(Text)
+    is_automatic = Column(Boolean, default=False)
+
+    stations = relationship("StationModel", back_populates="operation")
+
+    def __repr__(self):
+        return f"<Operation(id={self.id}, name={self.name})>"
+
+
+#
+#  C L U S T E R   T Y P E
+#
+class ClusterTypeModel(Base):
+    __tablename__ = "layout_cluster_types"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    name = Column(String, nullable=False)
+
+    station_clusters = relationship("StationClusterModel", back_populates="cluster_type")
+
+    def __repr__(self):
+        return f"<ClusterType(id={self.id}, name={self.name})>"
+
+
+#
+#  S T A T I O N   C L U S T E R
+#
+class StationClusterModel(Base):
+    __tablename__ = "layout_station_clusters"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    name = Column(String, nullable=False)
+
+    cluster_type_id = Column(
+        String(16),
+        ForeignKey("layout_cluster_types.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    cluster_type = relationship("ClusterTypeModel", back_populates="station_clusters")
+
+    stations = relationship("StationModel", back_populates="station_cluster")
+
+    def __repr__(self):
+        return f"<StationCluster(id={self.id}, name={self.name})>"
+
+
+#
+#  M A C H I N E   T Y P E
+#
+class MachineType(Base):
+    __tablename__ = "layout_machine_types"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    name = Column(String, nullable=False)
+    model = Column(String)
+    company = Column(String)
+    image_url = Column(String)
+
+    machines = relationship("MachineModel", back_populates="machine_type")
+
+    def __repr__(self):
+        return f"<MachineType(id={self.id}, name={self.name})>"
+
+
+#
+#  M A C H I N E
+#
+class MachineModel(Base):
+    __tablename__ = "layout_machines"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    serial = Column(String, nullable=False)
+    network_info = Column(JSON)  # If using Postgres
+
+    # Foreign key to machine_types (assume you already have this)
+    machine_type_id = Column(
+        String(16),
+        ForeignKey("layout_machine_types.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    # Relationship back to MachineType (assume you already have this)
+    machine_type = relationship("MachineType", back_populates="machines")
+
+    # ----- NEW RELATIONSHIPS -----
+    # 1. Status logs
+    machine_status_logs = relationship("MaintenanceMachineStatusLogModel", back_populates="machine")
+
+    # 2. Repair logs
+    machine_repair_logs = relationship("MaintenanceMachineRepairModel", back_populates="machine")
+
+    # 3. Maintenance logs
+    machine_maintenance_logs = relationship("MaintenanceMachineMaintenanceModel", back_populates="machine")
+
+    # 4. Observations
+    machine_observations = relationship("MaintenanceMachineObservationModel", back_populates="machine")
+
+    def __repr__(self):
+        return f"<MachineModel(id={self.id}, serial={self.serial})>"
+
+
+#
+#  L A Y O U T
+#
+class LayoutModel(Base):
+    __tablename__ = "layouts"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    # Version auto-incremented for each change
+    version = Column(Boolean, default=1,  nullable=True)
+    # Add foreign key to line
+    line_id = Column(String(16), ForeignKey('planner_lines.id'), nullable=False)
+    user_id = Column(String(16), ForeignKey('api_users.id'), nullable=False)
+    is_active = Column(Boolean, default=True, server_default=DefaultClause("1"), nullable=False)
+
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc),
+                        nullable=False)
+
+    stations = relationship("StationModel", back_populates="layout")
+    line = relationship("LineModel", backref="layouts")
+    user = relationship("UserModel", backref="layouts")
+
+    def __repr__(self):
+        return f"<Layout(id={self.id}, line={self.line})>"
+
+
+#
+#  S T A T I O N
+#
+class StationModel(Base):
+    __tablename__ = "layout_stations"
+
+    # Add a table-level constraint to ensure machine_id is unique
+    __table_args__ = (
+        UniqueConstraint('machine_id', name='uq_station_machine_id'),
+    )
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    index = Column(Integer)
+
+    operation_id = Column(
+        String(16),
+        ForeignKey("layout_operations.id", ondelete="SET NULL"),
+        nullable=True
+    )
+    area_id = Column(
+        String(16),
+        ForeignKey("layout_areas.id", ondelete="SET NULL"),
+        nullable=True
+    )
+    station_cluster_id = Column(
+        String(16),
+        ForeignKey("layout_station_clusters.id", ondelete="SET NULL"),
+        nullable=True
+    )
+    machine_id = Column(
+        String(16),
+        ForeignKey("layout_machines.id", ondelete="SET NULL"),
+        nullable=True
+    )
+    layout_id = Column(
+        String(16),
+        ForeignKey("layouts.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    # Relationships
+    operation = relationship("OperationModel", back_populates="stations")
+    area = relationship("AreaModel", back_populates="stations")
+    station_cluster = relationship("StationClusterModel", back_populates="stations")
+    machine = relationship("MachineModel")  # One machine per station
+    layout = relationship("LayoutModel", back_populates="stations")
+
+    def __repr__(self):
+        return f"<Station(id={self.id}, operation={self.operation}, area={self.area})>"
+
+
+class MaintenanceMachineStatusLogModel(Base):
+    """
+    Tracks changes in machine status over time.
+    Example statuses might be: "Running", "Stopped", "NeedsParts", etc.
+    """
+    __tablename__ = "maintenance_machine_status_logs"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+
+    machine_id = Column(
+        String(16),
+        ForeignKey("layout_machines.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    status = Column(String, nullable=False)  # e.g., "Stopped", "Running"
+    changed_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    details = Column(Text)  # free text describing the status reason, etc.
+
+    # Relationship back to MachineModel
+    machine = relationship("MachineModel", back_populates="machine_status_logs")
+
+    def __repr__(self):
+        return f"<MaintenanceMachineStatusLogModel(id={self.id}, status={self.status})>"
+
+
+class MaintenanceMachineRepairModel(Base):
+    """
+    Tracks a machine's repair events.
+    For example: replaced a broken belt, fixed a motor, etc.
+    """
+    __tablename__ = "maintenance_machine_repairs"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+
+    machine_id = Column(
+        String(16),
+        ForeignKey("layout_machines.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    repair_description = Column(Text, nullable=False)
+    start_time = Column(DateTime, default=datetime.utcnow, nullable=False)
+    end_time = Column(DateTime, nullable=True)
+    # Possibly add columns like cost, repaired_by, etc.
+
+    machine = relationship("MachineModel", back_populates="machine_repair_logs")
+
+    def __repr__(self):
+        return f"<MaintenanceMachineRepairModel(id={self.id}, machine_id={self.machine_id})>"
+
+
+class MaintenanceMachineMaintenanceModel(Base):
+    """
+    Tracks scheduled or unscheduled maintenance logs.
+    Could store type of maintenance, date performed, next due date, etc.
+    """
+    __tablename__ = "maintenance_machine_maintenance"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+
+    machine_id = Column(
+        String(16),
+        ForeignKey("layout_machines.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    maintenance_type = Column(String, nullable=False)  # e.g., "Preventive", "Corrective"
+    performed_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    notes = Column(Text)  # e.g. "Replaced filter", "Lubricated belts"
+
+    machine = relationship("MachineModel", back_populates="machine_maintenance_logs")
+
+    def __repr__(self):
+        return f"<MaintenanceMachineMaintenanceModel(id={self.id}, type={self.maintenance_type})>"
+
+
+class MaintenanceMachineObservationModel(Base):
+    """
+    Stores free-form observations made by operators, technicians, etc.
+    Example usage: notes about noise, temperature, performance anomalies, etc.
+    """
+    __tablename__ = "maintenance_machine_observations"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+
+    machine_id = Column(
+        String(16),
+        ForeignKey("layout_machines.id", ondelete="SET NULL"),
+        nullable=True
+    )
+
+    observed_at = Column(DateTime, default=datetime.utcnow, nullable=False)
+    observation = Column(Text, nullable=False)  # free text
+
+    # Possibly track who made the observation
+    observed_by = Column(String, nullable=True)
+
+    machine = relationship("MachineModel", back_populates="machine_observations")
+
+    def __repr__(self):
+        return f"<MaintenanceMachineObservationModel(id={self.id}, observation={self.observation[:20]})>"

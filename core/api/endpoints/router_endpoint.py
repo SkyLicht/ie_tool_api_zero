@@ -37,3 +37,5 @@ async def create_router(
 
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+    finally:
+        repo.session.close()

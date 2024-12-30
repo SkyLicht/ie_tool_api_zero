@@ -9,9 +9,10 @@ from core.logger_manager import LoggerManager
 
 class RouterAccessRepository:
 
-    def __init__(self, db: Session):
+    def __init__(self, session: Session):
+        self.session = session
         self.logger = LoggerManager.get_logger(name= 'api')
-        self.dao = RouterAccessDAO(db, self.logger)
+        self.dao = RouterAccessDAO(session, self.logger)
 
 
     def create_router_access(self, route_pattern: str, _type: str) -> RouterAccessModel:

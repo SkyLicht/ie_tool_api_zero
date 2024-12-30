@@ -13,10 +13,11 @@ from core.data.schemas.user_schema import UserCreate
 
 
 class UserRepository:
-    def __init__(self, db: Session, logger):
-        self.user_dao = UserDAO(db, logger)
-        self.role_dao = RoleDAO(db, logger)
-        self.route_dao = RouterAccessDAO(db, logger)
+    def __init__(self, session: Session, logger):
+        self.session = session
+        self.user_dao = UserDAO(session, logger)
+        self.role_dao = RoleDAO(session, logger)
+        self.route_dao = RouterAccessDAO(session, logger)
         self.logger = logger
 
     def create_user(self, user_data: UserCreate):
@@ -74,7 +75,7 @@ class UserRepository:
 
     def get_user_by_username(self, username: str) -> Optional[UserModel]:
         user = self.user_dao.get_user_by_username(username)
-        self.logger.info(f"User found: {user.to_dict()}")
+        self.logger.info(f"User found: {user.username}")
         return user
 
     def get_all_users(self) -> List[Type[UserModel]]:
