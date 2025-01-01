@@ -41,3 +41,14 @@ class LayoutDAO:
                     joinedload(LayoutModel.stations)
                 )
                 .all())
+
+    def get_layout_by_line_id(self, line_id):
+        # Check for versions
+        return (self.session.query(LayoutModel)
+                .options(
+                    joinedload(LayoutModel.line),
+                    joinedload(LayoutModel.line).joinedload(LineModel.factory),
+                    joinedload(LayoutModel.user),
+                    joinedload(LayoutModel.stations)
+                )
+                .filter(LayoutModel.line_id == line_id).first())

@@ -1,6 +1,7 @@
-
 import datetime
 from datetime import date
+from typing import List
+
 from pydantic import BaseModel
 
 from core.data.models.it_tool_orm_models import WorkPlanModel
@@ -43,9 +44,8 @@ class WorkPlanSchema(BaseModel):
 
     platform: PlatformSchema
 
-
     @staticmethod
-    def from_orm_to(orm: WorkPlanModel) -> 'WorkPlanSchema':
+    def work_plan_orm_to_schema(orm: WorkPlanModel) -> 'WorkPlanSchema':
         return WorkPlanSchema(
             id=orm.id,
             work_day_id=orm.work_day_id,
@@ -63,8 +63,8 @@ class WorkPlanSchema(BaseModel):
             ict=orm.ict,
             line=orm.line.name,
             factory=orm.line.factory.name,
-            uph_meta= round(orm.target_oee * orm.platform.uph),
-            commit= round(orm.planned_hours * (orm.target_oee * orm.platform.uph)),
+            uph_meta=round(orm.target_oee * orm.platform.uph),
+            commit=round(orm.planned_hours * (orm.target_oee * orm.platform.uph)),
             commit_full=round(orm.planned_hours * orm.platform.uph),
             platform=PlatformSchema(
                 f_n=orm.platform.f_n,
@@ -80,3 +80,7 @@ class WorkPlanSchema(BaseModel):
                 width=orm.platform.width,
             )
         )
+
+    @staticmethod
+    def work_plan_orm_list_to_schema_list(orm_list: [WorkPlanModel]) -> 'List[WorkPlanSchema]':
+        return [WorkPlanSchema.work_plan_orm_to_schema(orm) for orm in orm_list]

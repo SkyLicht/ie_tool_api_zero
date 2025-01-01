@@ -15,7 +15,6 @@ class CreateWorkPlanRequest(BaseModel):
     uph_i: Optional[int] = Field(None, description="UPH")
     start_hour: Optional[int] = Field(None, description="Start hour")
     end_hour: Optional[int] = Field(None, description="End hour")
-    date: Optional[datetime] = Field(None, description="Date in YYYY-MM-DD format")
     str_date: Optional[str] = Field(None, description="Date in YYYY-MM-DD format")
     week: Optional[int] = Field(None, description="Week number")
     head_count: Optional[int] = Field(None, description="Head count")
@@ -53,7 +52,6 @@ class CreateWorkPlanRequest(BaseModel):
             uph_i=self.uph_i,
             start_hour=self.start_hour,
             end_hour=self.end_hour,
-            date=self.date,
             str_date=self.str_date,
             week=self.week,
             head_count=self.head_count,

@@ -57,6 +57,7 @@ class LoggerManager:
         """
 
         # todo: remove log_file
+        # todo: validate the log files existence
         if log_file is None and log_file_name is None:
             log_file = os.path.join('config', 'logs', 'core.log')
 
@@ -67,6 +68,8 @@ class LoggerManager:
                 log_file = os.path.join('config', 'logs', 'app.log')
             elif log_file_name == 'api':
                 log_file = os.path.join('config', 'logs', 'api.log')
+            elif log_file_name == 'request':
+                log_file = os.path.join('config', 'logs', 'api_request.log')
 
 
         with cls._lock:

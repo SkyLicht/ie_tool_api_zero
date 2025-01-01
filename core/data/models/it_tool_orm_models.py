@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 
-from sqlalchemy import Column, String, ForeignKey, Table, Boolean, DateTime, Index, Integer, Text, Date, Float, \
+from sqlalchemy import Column, String, ForeignKey, Table, Boolean, DateTime, Index, Integer, Text, Float, \
     CheckConstraint, UniqueConstraint, func, JSON, DefaultClause
 from sqlalchemy.orm import relationship
 
@@ -289,10 +289,12 @@ class WorkDayModel(Base):
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     str_date = Column(String(10), nullable=False)
-    date = Column(Date, nullable=False,
-                  default=datetime.now(timezone.utc))  # Date of the work day (YYYY-MM-DD) utc time
     week = Column(Integer, nullable=False)
     line_id = Column(String(16), ForeignKey('planner_lines.id'), nullable=False)
+
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
 
     # Unique constraint to avoid duplicates on the same day/line/factory
     __table_args__ = (
@@ -427,8 +429,6 @@ class WorkPlanModel(Base):
     uph_i = Column(Integer, nullable=False)
     start_hour = Column(Integer, nullable=False)
     end_hour = Column(Integer, nullable=False)
-    date = Column(Date, nullable=False,
-                  default=datetime.now(timezone.utc))  # Date of the work day (YYYY-MM-DD) utc time
     str_date = Column(String(10), nullable=False)
     week = Column(Integer, nullable=False)
     head_count = Column(Integer, nullable=False)
@@ -446,6 +446,7 @@ class WorkPlanModel(Base):
         # target_oee must be between 0.1 and 1 (10% to 100%), planned_hours must be greater than 0
         CheckConstraint('target_oee >= 0.1 AND target_oee <= 1.0', name='check_planner_workplan_target_oee'),
         CheckConstraint('planned_hours > 0', name='check_planner_workplan_planned_hours'),
+        Index('idx_planner_work_plan_line_date', 'line_id', 'str_date'),
     )
 
     line = relationship("LineModel")
@@ -626,7 +627,7 @@ class LayoutModel(Base):
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     # Version auto-incremented for each change
-    version = Column(Boolean, default=1,  nullable=True)
+    version = Column(Boolean, default=1, nullable=True)
     # Add foreign key to line
     line_id = Column(String(16), ForeignKey('planner_lines.id'), nullable=False)
     user_id = Column(String(16), ForeignKey('api_users.id'), nullable=False)
@@ -798,3 +799,83 @@ class MaintenanceMachineObservationModel(Base):
 
     def __repr__(self):
         return f"<MaintenanceMachineObservationModel(id={self.id}, observation={self.observation[:20]})>"
+
+
+# Line Balancing ORM Models
+
+class LineBalanceModel(Base):
+    __tablename__ = "ct_line_balances"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    str_date = Column(String(10), nullable=False, index=True)
+    week = Column(Integer, nullable=False)
+    user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False, index=True)
+    layout_id = Column(String(16), ForeignKey("layouts.id"), nullable=False, index=True)
+
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
+
+    # Constraints
+    # One per week,layout
+    __table_args__ = (
+        CheckConstraint('week >= 0 AND week < 53', name='check_ct_line_balances_week'),
+        UniqueConstraint('week', 'layout_id', name='uq_line_balance_date_layout'),
+        Index('ix_week_layout', 'week', 'layout_id'),
+    )
+
+    # Relationships
+    user = relationship("UserModel")
+    layout = relationship("LayoutModel")
+
+    takes = relationship("CycleTimeTakeModel", back_populates="line_balance", cascade="all, delete-orphan")
+
+
+    def __repr__(self):
+        return f"<LineBalanceModel(id={self.id}, str_date={self.str_date})>"
+
+class CycleTimeTakeModel(Base):
+    __tablename__ = "ct_cycle_time_takes"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    platform_id = Column(String(16), ForeignKey("planner_platform.id"), nullable=False)
+    line_balance_id = Column(String(16), ForeignKey("ct_line_balances.id", ondelete="CASCADE"), nullable=False)
+    user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False)
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
+
+    # Constraints
+
+    # Relationships
+    user = relationship("UserModel")
+    line_balance = relationship("LineBalanceModel", back_populates="takes")
+    records = relationship("CycleTimeRecordModel", back_populates="take", cascade="all, delete-orphan")
+    platform = relationship("PlatformModel")
+
+    def __repr__(self):
+        return f"<CycleTimeTakeModel(id={self.id}, platform_id={self.platform_id})>"
+
+class CycleTimeRecordModel(Base):
+    __tablename__ = "ct_cycle_time_records"
+
+    id = Column(String(16), primary_key=True, default=generate_custom_id)
+    # JSON
+    cycle_time = Column(JSON, nullable=False)
+    user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False)
+    take_id = Column(String(16), ForeignKey("ct_cycle_time_takes.id", ondelete='CASCADE'), nullable=False)
+    station_id = Column(String(16), ForeignKey("layout_stations.id"), nullable=False)
+
+    # Audit fields for creation and modification tracking
+    created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
+    updated_at = Column(DateTime, default=datetime.now(timezone.utc), onupdate=datetime.now(timezone.utc))
+
+    # Constraints
+
+    # Relationships
+    user = relationship("UserModel")
+    take = relationship("CycleTimeTakeModel", back_populates="records")
+    station = relationship("StationModel")
+
+    def __repr__(self):
+        return f"<CycleTimeRecordModel(id={self.id}, station_id={self.station_id})>"

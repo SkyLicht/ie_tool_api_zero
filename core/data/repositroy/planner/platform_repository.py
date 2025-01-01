@@ -1,5 +1,5 @@
 from core.data.dao.planner.platform_dao import PlatformDAO
-from core.data.dao.planner.workplan_dao import WorkPlanDAO
+from core.data.dao.planner.work_plan_dao import WorkPlanDAO
 
 
 class PlatformRepository:

@@ -1,6 +1,7 @@
 import time
 from datetime import timedelta
 
+import jwt
 from fastapi import FastAPI, Depends, HTTPException, Request
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
@@ -10,9 +11,14 @@ from starlette.middleware.cors import CORSMiddleware
 from core.api.dependency import get_scoped_db_session
 from core.api.endpoints import user_endpoint, router_endpoint
 from core.api.endpoints.layout import layout_endpoint
+from core.api.endpoints.line_balance import line_balance_endpoint
 from core.api.endpoints.planner import planner_endpoint, platform_endpoint
-from core.auth.security import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token
+from core.auth.security import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES, create_access_token, SECRET_KEY, \
+    ALGORITHM
 from core.data.schemas.token_schema import Token
+from core.db.ie_tool_db import IETOOLDBConnection
+from core.logger_manager import LoggerManager
+
 
 app = FastAPI()
 # Allow CORS for localhost:3000
@@ -25,16 +31,59 @@ app.add_middleware(
     allow_headers=["*"],  # Allow all headers
 )
 
-#@app.middleware("http")
-# async def add_process_time_header(request: Request, call_next):
-#     start_time = time.perf_counter()
-#     response = await call_next(request)
-#     process_time = time.perf_counter() - start_time
-#     response.headers["X-Process-Time"] = str(process_time)
-#
-#     print(response)
-#     return response
+@app.middleware("http")
+async def db_session_middleware(request: Request, call_next):
+    db = IETOOLDBConnection().get_session()
+    start_time = time.time()  # Record the start time of the request
 
+
+    # Extract the Authorization header
+    auth_header = request.headers.get("authorization")
+    user = 'UNKNOWN'
+
+    if auth_header and auth_header.startswith("Bearer "):
+        user: str = jwt.decode(auth_header.split(" ")[1], SECRET_KEY, algorithms=[ALGORITHM]).get("sub")
+
+
+
+
+    logger = LoggerManager.get_logger(name="FastAPI", log_file_name="request", username=user)
+    try:
+        request.state.db = db
+
+        # Attempt to process the request
+        response = await call_next(request)
+
+        # Calculate the time taken for the request
+        process_time = time.time() - start_time
+
+        # Log the request information and response details
+        logger.info(
+            "Request: method=%s, url=%s, client=%s, status_code=%s, process_time=%.2f seconds",
+            request.method,
+            request.url.path,
+            request.client.host,
+            response.status_code,
+            process_time
+        )
+
+
+
+        # db.commit()  # commit if everything succeeded
+    except Exception:
+        db.rollback()
+        raise
+    finally:
+        db.close()
+        # # Log the error with request details
+        # logger.error(
+        #     "Error: method=%s, url=%s, client=%s, error=%s",
+        #     request.method,
+        #     request.url.path,
+        #     request.client.host,
+        #     str(e)
+        # )
+    return response
 
 app.include_router(
     prefix='/api/v1',
@@ -59,6 +108,11 @@ app.include_router(
 app.include_router(
     prefix='/api/v1',
     router= layout_endpoint.router
+)
+
+app.include_router(
+    prefix='/api/v1',
+    router= line_balance_endpoint.router
 )
 
 @app.get("/")

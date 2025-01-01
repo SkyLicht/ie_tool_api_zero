@@ -51,11 +51,9 @@ async def create_layout(
         return layout_repo.create_layout_by_line_id(line_id)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
 
 
-@router.get("/get_layout")
+@router.get("/get_layout_by_id")
 async def get_layouts(
         layout_id: str,
         layout_repo: LayoutRepository = Depends(get_layout_repository),
@@ -65,8 +63,7 @@ async def get_layouts(
         return layout_repo.get_layout_by_id(layout_id)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
+
 
 @router.get("/get_layouts")
 async def get_layouts(
@@ -77,8 +74,7 @@ async def get_layouts(
         return layout_repo.get_all_layouts()
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
+
 
 
 @router.get("/get_stations")
@@ -90,8 +86,7 @@ async def get_stations(
         return layout_repo.get_all_stations()
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
+
 
 
 @router.get("/get_operations_areas")
@@ -103,8 +98,7 @@ async def get_operations(
         return layout_repo.get_all_operations_and_areas()
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
+
 
 
 
@@ -123,5 +117,4 @@ async def update_layout(
         return layout_repo.update_stations_in_layout(body.layout_id, body.stations)
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
-    finally:
-        layout_repo.session.close()
+

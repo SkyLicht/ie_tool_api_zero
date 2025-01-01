@@ -1,0 +1,1 @@
+2024-12-31 21:22:48 - PlannerEndpoint - ERROR - [planner_endpoint.py:53] - Unexpected Error: 'date' is an invalid keyword argument for WorkPlanModel - User: SYSTEM
