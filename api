@@ -1,0 +1,224 @@
+2024-12-28 21:12:51 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-28 21:17:11 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-28 21:17:12 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:09:04 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:09:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:10:15 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:10:16 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:11:11 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:11:12 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:12:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:13:03 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:14:23 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:14:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 09:26:32 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 09:26:34 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:42:04 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 11:42:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:42:06 - FastApi - ERROR - [run_server.py:73] - Error starting server: cannot import name 'FactorySchema' from partially initialized module 'core.data.schemas.planner.factory_schema' (most likely due to a circular import) (C:\data\code\ie_tool_api\core\data\schemas\planner\factory_schema.py) - User: SYSTEM
+2024-12-29 11:43:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:43:06 - FastApi - ERROR - [run_server.py:73] - Error starting server: cannot import name 'FactorySchema' from partially initialized module 'core.data.schemas.planner.factory_schema' (most likely due to a circular import) (C:\data\code\ie_tool_api\core\data\schemas\planner\factory_schema.py) - User: SYSTEM
+2024-12-29 11:52:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:52:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 11:53:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:53:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 11:53:23 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:55:12 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 11:55:12 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 11:56:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 11:56:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 12:06:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 12:07:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 12:07:32 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 12:07:34 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:17:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:18:01 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:27:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:27:22 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:30:46 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:30:47 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:31:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:31:28 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:47:03 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:47:15 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:48:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:48:17 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 17:49:25 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 17:49:26 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 18:26:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 18:26:37 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 18:37:43 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 18:37:44 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 18:38:37 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 18:38:37 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 20:01:28 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 20:01:29 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 20:05:47 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 20:05:59 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 20:25:08 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 20:25:09 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-29 22:12:11 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-29 22:13:40 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 00:40:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 00:40:03 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 00:46:34 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 00:46:35 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 00:47:12 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 00:47:15 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:06:01 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:06:03 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:07:38 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:07:39 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:08:44 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:08:48 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:12:56 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:12:57 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:14:35 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:14:37 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:40:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:40:23 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:49:44 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:49:45 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:52:14 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:52:15 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:53:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:53:17 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:54:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:54:34 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 01:54:47 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 01:54:55 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:00:47 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:00:48 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:01:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:01:34 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:04:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:04:20 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:10:06 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:10:06 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:12:52 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:12:53 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:30:51 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:30:51 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 02:43:37 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 02:43:38 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 03:08:24 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 03:08:25 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 03:13:32 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 03:13:52 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 23:14:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-30 23:16:53 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-30 23:16:53 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 17:24:23 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 17:33:39 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 17:33:40 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:26:57 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:26:58 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:34:52 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:34:55 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:35:21 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:37:33 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:41:35 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:41:36 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:42:56 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:42:57 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:44:35 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:44:36 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:45:35 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:45:36 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:48:05 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:48:06 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:48:36 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:48:37 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:48:46 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:48:54 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 19:55:57 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 19:56:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:00:38 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:00:39 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:10:59 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:11:00 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:50:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:51:45 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:52:23 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:52:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:54:29 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:54:30 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 20:59:38 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 20:59:38 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:03:28 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:03:29 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:03:49 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:03:50 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:04:18 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:04:27 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:07:49 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:07:49 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:08:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:08:27 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:12:18 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:12:19 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:14:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:14:28 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:17:49 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:18:02 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:20:48 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:20:48 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:23:20 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:23:21 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:27:16 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:27:17 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:28:04 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:28:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:30:15 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:30:16 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:31:03 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:31:04 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2024-12-31 21:31:33 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2024-12-31 21:31:55 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:18:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:18:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:18:25 - FastApi - ERROR - [run_server.py:73] - Error starting server: RelationshipProperty.__init__() got an unexpected keyword argument 'ondelete' - User: SYSTEM
+2025-01-01 01:21:08 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:23:17 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:23:59 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:26:10 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:26:11 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:27:24 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:27:39 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:27:39 - FastApi - ERROR - [run_server.py:73] - Error starting server: RelationshipProperty.__init__() got an unexpected keyword argument 'ondelete' - User: SYSTEM
+2025-01-01 01:29:47 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:48:27 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:48:27 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 01:51:56 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 01:51:56 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:02:25 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:02:32 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:27:19 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:27:20 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:35:34 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:35:35 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:43:09 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:43:10 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:48:36 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:48:37 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:49:04 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:49:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:52:57 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:52:58 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 02:53:38 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 02:53:39 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:07:00 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:07:01 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:16:22 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:16:23 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:20:25 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:21:05 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:21:31 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:21:32 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:22:05 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:22:25 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:22:57 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:22:58 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:23:23 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM
+2025-01-01 03:23:24 - FastApi - INFO - [run_server.py:64] - Starting server on 192.168.0.168:3003 - User: SYSTEM
+2025-01-01 03:23:53 - FastApi - INFO - [run_server.py:71] - Server ended - User: SYSTEM

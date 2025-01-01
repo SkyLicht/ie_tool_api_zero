@@ -1,0 +1,450 @@
+[
+    {
+        "id": "9JcA8ZDDc3j5AeH",
+        "label": "Back Plate",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "Xiil3ao7bov0wmk",
+        "label": "GKG-B",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "GSQVyOIgwvxdoe1",
+        "label": "GKG-T",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "vyDiQ3vn5BtO3Fb",
+        "label": "Battery Insert",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "EkwE4Ntg7VyeROm",
+        "label": "Loader",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "0LqwKDy17oHc5dC",
+        "label": "CPU Assy",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "0StxCag3h4A17Zn",
+        "label": "Manual Assy-1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "XIbCa5R1Uxq2LP7",
+        "label": "Manual Assy-2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "iL5GqgD0D3CxRyV",
+        "label": "Manual Assy-3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "OOhaLrFA9P5oyLi",
+        "label": "AXXON",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "3F9ERCYNwk1Q8nk",
+        "label": "Radial",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "M33A7Bc0x1KwPnp",
+        "label": "Router",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "Ib5PSlz4XF3GlVI",
+        "label": "SPI-B1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "5GsMk08uKlj0M5l",
+        "label": "SPI-T1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "q7QaqyJKPqtGMlQ",
+        "label": "Depalletizer",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "DndLgdI3XklEqpu",
+        "label": "Palletizer",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "ZXvAiN6ZIbMjOjA",
+        "label": "Manual Depalletizer",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "UIhza5cZgZvHBUT",
+        "label": "Manual Palletizer",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "58haFb47f6DQEEm",
+        "label": "NPX T-01 & T-02",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "adSQmig93OK4SdQ",
+        "label": "NPX T-03 & T-04",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "qO7A6D8GvpeXaK5",
+        "label": "NPX T-05 & T-06",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "22iIoDE5feiqWEv",
+        "label": "NPX T-07 & T-08",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "NXbGW9TCyH9T4Yu",
+        "label": "NPX T-09 & T-10",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "mSpLNL05HdMnmFV",
+        "label": "NPX T-11 & T-12",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "njGAgXNdp9rk2UQ",
+        "label": "NPX T-13 & T-14",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "4nLRXhqnIXEfrgn",
+        "label": "NPX T-15 & T-16",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "El82DdBr9FVynio",
+        "label": "AOI-B1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "cPsBRY9ruY3zb2m",
+        "label": "AOI-B2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "8kZP0wfFOH4GEAf",
+        "label": "AOI-B3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "W55D4QBrlZI9j8E",
+        "label": "AOI-B4",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "2ynSslSVygLt7CX",
+        "label": "AOI-T1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "GSANb7DkxmVApb4",
+        "label": "AOI-T2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "24TZ1vL1625a6qW",
+        "label": "AOI-T3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "cZGfzhpRLhFaIJf",
+        "label": "AOI-T4",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "4wjNkXtzefipd44",
+        "label": "AOI-PTH",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "FvQC0ybCiDPccrG",
+        "label": "Touch Up",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "WIXDCZfb8y5RQn3",
+        "label": "NPM D3 T-1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "G457QN9ErYCkewk",
+        "label": "NPM D3 T-2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "t4T3NVe2KBs4V56",
+        "label": "NPM D3 T-3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "F9wdmLtHztmSoA7",
+        "label": "NPM D3 T-4",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "XJJOf2KCTcJjLYo",
+        "label": "Fuzion-B1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "JUrvXZJzmuYpmoa",
+        "label": "Fuzion-B2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "Ej10vAGliLE09hn",
+        "label": "Fuzion-T1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "d0tIAw3Ea56T22s",
+        "label": "Fuzion-T2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "yzYtnIrwpC4QluU",
+        "label": "Fuzion-T3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "daxMUXP0OTmylSV",
+        "label": "Fuzion-DIMM",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "NRjT5CvHJcO0SeO",
+        "label": "Wavesoldier",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "OXxQmpW0Znogi2N",
+        "label": "Heller-B1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "FL5pvEqCf9EIAvk",
+        "label": "Heller-T1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "lVHJoOpnfdOr21y",
+        "label": "VI-1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "RVLy86vt1DJCvBt",
+        "label": "VI-2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "E1sMzfkXqnY8Xba",
+        "label": "VI-3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "tKo9nHGEE7rhlKn",
+        "label": "FACC-1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "oUzNTaf0UJ90KGC",
+        "label": "FACC-2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "dyWZ9dPaQQwm4ld",
+        "label": "FACC-3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "LXAmRy9AUvIjzVX",
+        "label": "JUKI-1",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "4csxOEHAV26PSxQ",
+        "label": "JUKI-2",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "Phl3YjcnLFPVqsR",
+        "label": "JUKI-3",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "QiSjdDZzHYH8P9K",
+        "label": "FT",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "eFGyzjmtpv8vR5M",
+        "label": "ICT",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "N5CrXQaCTIQfM4R",
+        "label": "Fluxer",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "5JaYjXQXCtT7yhY",
+        "label": "Packing",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "KcG51kqzWTf9obB",
+        "label": "Depalletizer PTH",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    },
+    {
+        "id": "3YPJg5pdNXOUU40",
+        "label": "IB & HS",
+        "name": "",
+        "description": "",
+        "is_automatic": 1
+    }
+]
