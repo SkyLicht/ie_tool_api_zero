@@ -1,3 +1,5 @@
+import json
+
 from fastapi import HTTPException
 
 from core.auth.auth_utils import generate_custom_id
@@ -6,9 +8,10 @@ from core.data.dao.line_balance.line_balance_dao import LineBalanceDAO
 from core.data.dao.line_balance.line_balance_take_dao import LineBalanceTakeDAO
 from core.data.dao.planner.layout_dao import LayoutDAO
 from core.data.dao.planner.work_plan_dao import WorkPlanDAO
-from core.data.models.it_tool_orm_models import UserModel, CycleTimeTakeModel, LineBalanceModel, CycleTimeRecordModel
+from core.data.models.it_tool_orm_models import UserModel, CycleTimeTakeModel, CycleTimeRecordModel
 from core.logger_manager import LoggerManager
 from core.utils.date_utils import get_iso_week_number
+from core.utils.ie_utils import calculate_work_plan_residuals
 
 
 class LineBalanceRepository:
@@ -38,7 +41,6 @@ class LineBalanceRepository:
     def create_line_balance(self, str_date: str, line_id: str):
         week = get_iso_week_number(str_date)
 
-
         layout = self.layout_dao.get_layout_by_line_id(line_id)
 
         if not layout:
@@ -49,45 +51,166 @@ class LineBalanceRepository:
         if not work_plan:
             raise HTTPException(status_code=404, detail=f"Work plans for date {str_date} not found")
 
-
-
-
-        is_existing , line_balance = self.line_balance_dao.get_or_create_line_balance(
+        is_existing, line_balance = self.line_balance_dao.get_or_create_line_balance(
             str_date=str_date,
             week=week,
             user_id=self.user.id,
             layout_id=layout.id
         )
 
-        if is_existing :
+        if is_existing:
             raise HTTPException(status_code=400, detail="Line balance already exists")
 
         line_balance_take = CycleTimeTakeModel(
-            id= generate_custom_id(),
-            platform_id= work_plan.platform_id,
-            line_balance_id= line_balance.id,
-            user_id= self.user.id,
+            id=generate_custom_id(),
+            work_plan_id=work_plan.id,
+            line_balance_id=line_balance.id,
+            user_id=self.user.id,
         )
 
         cycle_times = [CycleTimeRecordModel(
-            id = generate_custom_id(),
-            cycle_time = [0],
-            user_id= self.user.id,
-            take_id= line_balance_take.id,
-            station_id= station.id,
+            id=generate_custom_id(),
+            cycle_time=[0],
+            user_id=self.user.id,
+            take_id=line_balance_take.id,
+            station_id=station.id,
         ) for station in layout.stations]
-
-
 
         self.take_dao.create(line_balance_take)
         self.cycle_time_dao.create_all(cycle_times)
 
         return line_balance.id
 
+    def get_all_line_balances_by_week(self, str_date: str):
+        week = get_iso_week_number(str_date)
+
+        line_balances = self.line_balance_dao.get_all_by_week(week)
+
+        return [
+            {
+                "id": line_balance.id,
+                "str_date": line_balance.str_date,
+                "week": line_balance.week,
+                "layout": {
+                    "id": line_balance.layout.id,
+                    "line_id": line_balance.layout.line_id,
+                    "factory_id": line_balance.layout.line.factory_id,
+                    "line_name": line_balance.layout.line.name,
+                    "factory_name": line_balance.layout.line.factory.name,
+                    "is_active": line_balance.layout.is_active,
+                    "version": line_balance.layout.version,
+                    "created_at": str(line_balance.layout.created_at),
+                    "updated_at": str(line_balance.layout.updated_at),
+                    "stations": [
+                        {
+                            "id": station.id,
+                            "operation_id": station.operation_id,
+                            "index": station.index,
+                            "label": station.operation.label
+                        } for station in line_balance.layout.stations
+                    ]
+                },
+                "created_at": str(line_balance.created_at),
+                "updated_at": str(line_balance.updated_at),
+            } for line_balance in line_balances
+        ]
 
     def get_line_balance_by_id(self, line_balance_id: str):
         orm = self.line_balance_dao.get_by_id(line_balance_id)
-        print(orm.takes)
-        for take in orm.takes:
-            print(take.records)
-        return orm
+
+        def serialize_work_plan(work_plan):
+            uph_target, commit, cycle_time = calculate_work_plan_residuals(
+                target_oee=work_plan.target_oee,
+                uph=work_plan.platform.uph,
+                planned_hours=work_plan.planned_hours
+            )
+            return {
+                "id": work_plan.id,
+                "str_date": work_plan.str_date,
+                "week": work_plan.week,
+                "platform": {
+                    "id": work_plan.platform.id,
+                    "platform": work_plan.platform.platform,
+                    "uph": work_plan.platform.uph,
+                    "f_n": work_plan.platform.f_n,
+                    "components": work_plan.platform.components,
+                    "cost": work_plan.platform.cost,
+                    "height": work_plan.platform.height,
+                    "width": work_plan.platform.width,
+                    "sku": work_plan.platform.sku,
+                    "in_service": work_plan.platform.in_service,
+                },
+                "planned_hours": work_plan.planned_hours,
+                "target_oee": work_plan.target_oee,
+                "uph_custom": work_plan.uph_i,
+                "uph_target": uph_target,
+                "commit": commit,
+                "cycle_time": cycle_time,
+                "head_count": work_plan.head_count,
+                "ft": work_plan.ft,
+                "ict": work_plan.ict,
+                "start_hour": work_plan.start_hour,
+                "end_hour": work_plan.end_hour,
+                "created_at": str(work_plan.created_at),
+                "updated_at": str(work_plan.updated_at),
+            }
+
+        def serialize_record(record):
+            return {
+                "id": record.id,
+                "station_id": record.station_id,
+                "cycle_time": record.cycle_time,
+                "index": record.station.index,
+                "area": {
+                    "id": record.station.area.id,
+                    "index": record.station.area.index,
+                    "name": record.station.area.name,
+                    "section": record.station.area.section,
+                },
+                "station": {
+                    "id": record.station.id,
+                    "operation_id": record.station.operation.id,
+                    "operation_name": record.station.operation.label,
+                    "is_automatic": record.station.operation.is_automatic,
+                }
+            }
+
+        def serialize_take(take):
+            return {
+                "id": take.id,
+                "work_plan": serialize_work_plan(take.work_plan),
+                "records": [serialize_record(record) for record in take.records],
+                "created_at": str(take.created_at),
+                "updated_at": str(take.updated_at),
+            }
+
+        def serialize_layout(layout):
+            return {
+                "id": layout.id,
+                "line_id": layout.line_id,
+                "factory_id": layout.line.factory_id,
+                "line_name": layout.line.name,
+                "factory_name": layout.line.factory.name,
+                "is_active": layout.is_active,
+                "version": layout.version,
+                "created_at": str(layout.created_at),
+                "updated_at": str(layout.updated_at),
+                "stations": [
+                    {
+                        "id": station.id,
+                        "operation_id": station.operation_id,
+                        "index": station.index,
+                        "label": station.operation.label,
+                    } for station in layout.stations
+                ]
+            }
+
+        line_balance = {
+            "id": orm.id,
+            "str_date": orm.str_date,
+            "week": orm.week,
+            "layout": serialize_layout(orm.layout),
+            "takes": [serialize_take(take) for take in orm.takes],
+        }
+
+        return line_balance

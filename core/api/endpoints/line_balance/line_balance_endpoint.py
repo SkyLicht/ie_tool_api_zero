@@ -59,3 +59,28 @@ async def get_line_balance_by_id(
     except Exception as e:
         repo.logger.error(f"Unexpected Error: {str(e)}")
         raise HTTPException(status_code=500, detail="An unexpected error occurred.")
+
+
+@router.get("/get_all_by_week")
+async def get_all_line_balances_by_week(
+    str_date: str,
+    repo: LineBalanceRepository = Depends(get_line_balance_repository)
+):
+    try:
+        return repo.get_all_line_balances_by_week(str_date)
+
+    except HTTPException as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    except PermissionError as e:
+        repo.logger.error(f"Permission Error: {str(e)}")
+        raise HTTPException(status_code=403, detail="Permission denied.")
+    except ValueError as e:
+        repo.logger.error(f"Invalid Input: {str(e)}")
+        raise HTTPException(status_code=422, detail=str(e))
+    except SQLAlchemyError as e:
+        repo.logger.error(f"SQLAlchemy Error: {str(e)}")
+        raise HTTPException(status_code=400, detail= str(e))
+    except Exception as e:
+        repo.logger.error(f"Unexpected Error: {str(e)}")
+        raise HTTPException(status_code=500, detail="An unexpected error occurred.")

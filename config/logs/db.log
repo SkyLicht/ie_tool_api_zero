@@ -1382,3 +1382,214 @@
 (Background on this error at: https://sqlalche.me/e/20/gkpj) - User: iradi
 2025-01-01 03:22:27 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'CycleTimeTakeModel' object has no attribute 'cycle_times' - User: iradi
 2025-01-01 03:22:29 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'CycleTimeTakeModel' object has no attribute 'cycle_times' - User: iradi
+2025-01-01 11:41:59 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with LineBalanceModel.layout has an attribute 'station' - User: iradi
+2025-01-01 11:42:15 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with LineBalanceModel.layout has an attribute 'stations' - User: iradi
+2025-01-01 12:04:07 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'LayoutModel' object is not iterable - User: iradi
+2025-01-01 12:13:57 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'LayoutModel' object has no attribute 'line_name' - User: iradi
+2025-01-01 12:14:26 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:54] - Invalid Input: 3 validation errors for LayoutSchema
+version
+  Input should be a valid string [type=string_type, input_value=True, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+updated_at
+  Input should be a valid string [type=string_type, input_value=datetime.datetime(2024, 1... 30, 10, 13, 53, 718667), input_type=datetime]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type
+created_at
+  Input should be a valid string [type=string_type, input_value=datetime.datetime(2024, 1... 30, 10, 13, 53, 718650), input_type=datetime]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type - User: iradi
+2025-01-01 12:15:39 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:54] - Invalid Input: 1 validation error for LayoutSchema
+version
+  Input should be a valid string [type=string_type, input_value=True, input_type=bool]
+    For further information visit https://errors.pydantic.dev/2.10/v/string_type - User: iradi
+2025-01-01 12:36:50 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:36:50 - LayoutRepository - ERROR - [layout_endpoint.py:117] - Layouts not found - User: iradi
+2025-01-01 12:37:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:37:33 - LayoutRepository - ERROR - [layout_endpoint.py:117] - Layouts not found - User: iradi
+2025-01-01 12:38:35 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J01 line created - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:36 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-01 12:38:37 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:37 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 1 - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J02 line created - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: u4L59ozSkOFEO7l - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:40 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: u4L59ozSkOFEO7l - User: iradi
+2025-01-01 12:38:41 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:41 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 2 - User: iradi
+2025-01-01 12:38:43 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J03 line created - User: iradi
+2025-01-01 12:38:43 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:43 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:43 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: D8H9MY4AItBypSw - User: iradi
+2025-01-01 12:38:44 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:44 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:44 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: D8H9MY4AItBypSw - User: iradi
+2025-01-01 12:38:45 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:45 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 3 - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J05 line created - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: 8WdZdsEprsQLWDL - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:47 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: 8WdZdsEprsQLWDL - User: iradi
+2025-01-01 12:38:48 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:48 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 4 - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J06 line created - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: gYLwcW3aAfLjjaa - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:50 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: gYLwcW3aAfLjjaa - User: iradi
+2025-01-01 12:38:52 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:52 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 5 - User: iradi
+2025-01-01 12:38:54 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J07 line created - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: KkP7N2dWQvtJRAI - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:38:55 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: KkP7N2dWQvtJRAI - User: iradi
+2025-01-01 12:38:56 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:38:56 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 6 - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J08 line created - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: R12JfQyxawlDSDt - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:00 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: R12JfQyxawlDSDt - User: iradi
+2025-01-01 12:39:02 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:02 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 7 - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for J09 line created - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: sIxqhQNFuRjzIdH - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:05 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: sIxqhQNFuRjzIdH - User: iradi
+2025-01-01 12:39:06 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:06 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 8 - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T01 line created - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: fZ4N5bizeIdTiBK - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:09 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: fZ4N5bizeIdTiBK - User: iradi
+2025-01-01 12:39:11 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:11 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 9 - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T02 line created - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: 1SNV4ONjt2foNYv - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:13 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: 1SNV4ONjt2foNYv - User: iradi
+2025-01-01 12:39:14 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:14 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 10 - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T03 line created - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: mS2DG3rD0yZxHwE - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:16 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: mS2DG3rD0yZxHwE - User: iradi
+2025-01-01 12:39:17 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:17 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 11 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T04 line created - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: oGCO5VRrAJTkn49 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:20 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: oGCO5VRrAJTkn49 - User: iradi
+2025-01-01 12:39:21 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:21 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 12 - User: iradi
+2025-01-01 12:39:25 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T05 line created - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: W7eZdW9mqFwNZBU - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:26 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: W7eZdW9mqFwNZBU - User: iradi
+2025-01-01 12:39:27 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:27 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 13 - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_dao.py:19] - Layout for T06 line created - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: JhxnFI29nSTJGYl - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:35 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: JhxnFI29nSTJGYl - User: iradi
+2025-01-01 12:39:37 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:37 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-01 12:39:42 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 12:39:43 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-01 12:39:43 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 12:39:43 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 12:39:43 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-01 12:40:15 - LayoutRepository - INFO - [station_dao.py:35] - Station Back Plate created - User: iradi
+2025-01-01 12:40:15 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-B created - User: iradi
+2025-01-01 12:40:15 - LayoutRepository - INFO - [station_dao.py:35] - Station Battery Insert created - User: iradi
+2025-01-01 12:40:35 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'CycleTimeTakeModel' object has no attribute 'platform' - User: iradi
+2025-01-01 12:41:26 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'CycleTimeTakeModel' object has no attribute 'platform' - User: iradi
+2025-01-01 12:44:39 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: Object of type LayoutModel is not JSON serializable - User: iradi
+2025-01-01 12:51:15 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'CycleTimeRecordModel' object has no attribute 'work_plan' - User: iradi
+2025-01-01 13:10:14 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: Object of type datetime is not JSON serializable - User: iradi
+2025-01-01 13:19:12 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'OperationModel' object has no attribute 'area' - User: iradi
+2025-01-01 13:22:15 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: Object of type AreaModel is not JSON serializable - User: iradi
+2025-01-01 13:40:52 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-01 14:19:24 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:21:23 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:26:25 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:28:32 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:52:24 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:57:04 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:57:18 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 14:57:21 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 15:04:51 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 15:10:37 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 15:15:34 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 15:16:31 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 15:16:31 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 15:16:31 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-01 15:16:35 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-01 15:16:35 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-01 15:16:35 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-01 15:20:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:23:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:36 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:37 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:37 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-01 15:24:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi

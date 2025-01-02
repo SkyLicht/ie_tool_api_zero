@@ -627,7 +627,7 @@ class LayoutModel(Base):
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     # Version auto-incremented for each change
-    version = Column(Boolean, default=1, nullable=True)
+    version = Column(Integer, default=1, nullable=True)
     # Add foreign key to line
     line_id = Column(String(16), ForeignKey('planner_lines.id'), nullable=False)
     user_id = Column(String(16), ForeignKey('api_users.id'), nullable=False)
@@ -838,7 +838,7 @@ class CycleTimeTakeModel(Base):
     __tablename__ = "ct_cycle_time_takes"
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
-    platform_id = Column(String(16), ForeignKey("planner_platform.id"), nullable=False)
+    work_plan_id = Column(String(16), ForeignKey("planner_work_plan.id"), nullable=False)
     line_balance_id = Column(String(16), ForeignKey("ct_line_balances.id", ondelete="CASCADE"), nullable=False)
     user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False)
     # Audit fields for creation and modification tracking
@@ -851,10 +851,10 @@ class CycleTimeTakeModel(Base):
     user = relationship("UserModel")
     line_balance = relationship("LineBalanceModel", back_populates="takes")
     records = relationship("CycleTimeRecordModel", back_populates="take", cascade="all, delete-orphan")
-    platform = relationship("PlatformModel")
+    work_plan = relationship("WorkPlanModel")
 
     def __repr__(self):
-        return f"<CycleTimeTakeModel(id={self.id}, platform_id={self.platform_id})>"
+        return f"<CycleTimeTakeModel(id={self.id}, platform_id={self.work_plan_id})>"
 
 class CycleTimeRecordModel(Base):
     __tablename__ = "ct_cycle_time_records"

@@ -3,7 +3,7 @@ from typing import Tuple, Optional
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session, joinedload
 
-from core.data.models.it_tool_orm_models import LineBalanceModel
+from core.data.models.it_tool_orm_models import LineBalanceModel, StationModel, LayoutModel, LineModel
 
 
 class LineBalanceDAO:
@@ -40,6 +40,21 @@ class LineBalanceDAO:
     def get_by_id(self, line_balance_id: str) -> Optional[LineBalanceModel]:
         try:
             return self.session.query(LineBalanceModel).options(
+                joinedload(LineBalanceModel.layout),
+                joinedload(LineBalanceModel.layout).joinedload(LayoutModel.stations),
+                joinedload(LineBalanceModel.layout).joinedload(LayoutModel.stations).joinedload(StationModel.operation),
+                joinedload(LineBalanceModel.layout).joinedload(LayoutModel.line),
+                joinedload(LineBalanceModel.layout).joinedload(LayoutModel.line).joinedload(LineModel.factory),
+                joinedload(LineBalanceModel.user),
             ).filter_by(id=line_balance_id).first()
+        except SQLAlchemyError as e:
+            raise e
+
+    def get_all(self):
+        pass
+
+    def get_all_by_week(self, week):
+        try:
+            return self.session.query(LineBalanceModel).filter_by(week=week).all()
         except SQLAlchemyError as e:
             raise e
