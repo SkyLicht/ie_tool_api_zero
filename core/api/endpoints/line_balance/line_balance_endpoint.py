@@ -58,7 +58,8 @@ async def get_line_balance_by_id(
         raise HTTPException(status_code=400, detail= str(e))
     except Exception as e:
         repo.logger.error(f"Unexpected Error: {str(e)}")
-        raise HTTPException(status_code=500, detail="An unexpected error occurred.")
+        print(e)
+        raise HTTPException(status_code=500, detail=f"An unexpected error occurred. {str(e)}")
 
 
 @router.get("/get_all_by_week")
@@ -68,10 +69,8 @@ async def get_all_line_balances_by_week(
 ):
     try:
         return repo.get_all_line_balances_by_week(str_date)
-
     except HTTPException as e:
         raise HTTPException(status_code=400, detail=str(e))
-
     except PermissionError as e:
         repo.logger.error(f"Permission Error: {str(e)}")
         raise HTTPException(status_code=403, detail="Permission denied.")

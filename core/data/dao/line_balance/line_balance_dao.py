@@ -3,7 +3,8 @@ from typing import Tuple, Optional
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session, joinedload
 
-from core.data.models.it_tool_orm_models import LineBalanceModel, StationModel, LayoutModel, LineModel
+from core.data.models.it_tool_orm_models import LineBalanceModel, StationModel, LayoutModel, LineModel, \
+    CycleTimeTakeModel, CycleTimeRecordModel, AreaModel
 
 
 class LineBalanceDAO:
@@ -45,6 +46,10 @@ class LineBalanceDAO:
                 joinedload(LineBalanceModel.layout).joinedload(LayoutModel.stations).joinedload(StationModel.operation),
                 joinedload(LineBalanceModel.layout).joinedload(LayoutModel.line),
                 joinedload(LineBalanceModel.layout).joinedload(LayoutModel.line).joinedload(LineModel.factory),
+                joinedload(LineBalanceModel.takes),
+                joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records),
+                joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records).joinedload(CycleTimeRecordModel.station),
+                joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records).joinedload(CycleTimeRecordModel.station).joinedload(StationModel.area),
                 joinedload(LineBalanceModel.user),
             ).filter_by(id=line_balance_id).first()
         except SQLAlchemyError as e:

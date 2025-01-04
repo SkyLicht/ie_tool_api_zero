@@ -34,6 +34,7 @@ app.add_middleware(
 @app.middleware("http")
 async def db_session_middleware(request: Request, call_next):
     db = IETOOLDBConnection().get_session()
+    # get user
     start_time = time.time()  # Record the start time of the request
 
 
@@ -66,8 +67,6 @@ async def db_session_middleware(request: Request, call_next):
             response.status_code,
             process_time
         )
-
-
 
         # db.commit()  # commit if everything succeeded
     except Exception:

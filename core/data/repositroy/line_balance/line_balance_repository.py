@@ -118,6 +118,9 @@ class LineBalanceRepository:
     def get_line_balance_by_id(self, line_balance_id: str):
         orm = self.line_balance_dao.get_by_id(line_balance_id)
 
+        if not orm:
+            raise HTTPException(status_code=404, detail=f"Line balance {line_balance_id} not found")
+
         def serialize_work_plan(work_plan):
             uph_target, commit, cycle_time = calculate_work_plan_residuals(
                 target_oee=work_plan.target_oee,
@@ -156,6 +159,10 @@ class LineBalanceRepository:
             }
 
         def serialize_record(record):
+
+            if record.station is None:
+                return None
+
             return {
                 "id": record.id,
                 "station_id": record.station_id,
@@ -195,14 +202,14 @@ class LineBalanceRepository:
                 "version": layout.version,
                 "created_at": str(layout.created_at),
                 "updated_at": str(layout.updated_at),
-                "stations": [
-                    {
-                        "id": station.id,
-                        "operation_id": station.operation_id,
-                        "index": station.index,
-                        "label": station.operation.label,
-                    } for station in layout.stations
-                ]
+                # "stations": [
+                #     {
+                #         "id": station.id,
+                #         "operation_id": station.operation_id,
+                #         "index": station.index,
+                #         "label": station.operation.label,
+                #     } for station in layout.stations
+                # ]
             }
 
         line_balance = {
@@ -212,5 +219,9 @@ class LineBalanceRepository:
             "layout": serialize_layout(orm.layout),
             "takes": [serialize_take(take) for take in orm.takes],
         }
+
+
+        # print(json.dumps(line_balance.get('takes'), indent=4))
+
 
         return line_balance

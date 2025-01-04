@@ -694,7 +694,7 @@ class StationModel(Base):
     layout = relationship("LayoutModel", back_populates="stations")
 
     def __repr__(self):
-        return f"<Station(id={self.id}, operation={self.operation}, area={self.area})>"
+        return f"<Station(id={self.id}, index={self.index})>"
 
 
 class MaintenanceMachineStatusLogModel(Base):

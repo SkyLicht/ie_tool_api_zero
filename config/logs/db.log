@@ -1593,3 +1593,656 @@ version
 2025-01-01 15:24:37 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
 2025-01-01 15:24:37 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
 2025-01-01 15:24:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:19:41 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 11:19:51 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 11:21:54 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:48:21 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:49:38 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:49:45 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:50:08 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 11:50:24 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:15 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 12:15:28 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:33 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:33 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:15:36 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:36 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:42 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:51 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:53 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:15:53 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:15:57 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:15:58 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:01 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:04 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-03 12:16:04 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:04 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:06 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:12 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:13 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:14 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:15 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:16:22 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:16:30 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:16:30 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:16:32 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:16:32 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:16:32 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:16:44 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:16:44 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:16:44 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:07 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:18:17 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:18:17 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:19:35 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:19:35 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:19:35 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:19:41 - LayoutRepository - INFO - [station_dao.py:56] - Station Back Plate updated - User: iradi
+2025-01-03 12:19:41 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 12:19:41 - LayoutRepository - INFO - [station_dao.py:56] - Station Battery Insert updated - User: iradi
+2025-01-03 12:19:41 - LayoutRepository - INFO - [station_dao.py:35] - Station Loader created - User: iradi
+2025-01-03 12:19:43 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:19:43 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:19:43 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:19:57 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:19:57 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=2 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:20:02 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 12:42:59 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:42:59 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:42:59 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:43:08 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:43:08 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:43:08 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:45:46 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 12:45:46 - LayoutRepository - INFO - [station_dao.py:56] - Station Battery Insert updated - User: iradi
+2025-01-03 12:45:47 - LayoutRepository - INFO - [station_dao.py:56] - Station Back Plate updated - User: iradi
+2025-01-03 12:45:47 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 12:45:47 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-1 created - User: iradi
+2025-01-03 12:45:47 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2025-01-03 12:54:41 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:54:41 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:54:41 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Battery Insert updated - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Back Plate updated - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-11 & T-12 created - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-13 & T-14 created - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:46] - Station ZhOU6FapDmldD07 deleted - User: iradi
+2025-01-03 12:54:59 - LayoutRepository - INFO - [station_dao.py:46] - Station YxMCpXSCLMlvUDr deleted - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-B1 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-01 & T-02 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-03 & T-04 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-05 & T-06 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-07 & T-08 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-B1 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-B1 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:35] - Station Heller-B1 created - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:46] - Station yTuIxbmPOFL8SQB deleted - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:46] - Station XIsGDCY0M0pXewQ deleted - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:46] - Station fPfa9AKRiZPk6Kz deleted - User: iradi
+2025-01-03 12:58:20 - LayoutRepository - INFO - [station_dao.py:46] - Station PyGg12qo2R9P8OX deleted - User: iradi
+2025-01-03 12:58:23 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 12:58:23 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 12:58:26 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 12:58:26 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 12:58:26 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-B2 created - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2025-01-03 13:07:04 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-T1 created - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 13:07:05 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-09 & T-10 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-11 & T-12 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-13 & T-14 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-15 & T-16 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-T1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-T2 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-T1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Palletizer created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Heller-T1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Depalletizer created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-T2 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Radial created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-DIMM created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station JUKI-1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station JUKI-2 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station FACC-1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station FACC-2 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-2 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Manual Assy-3 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Fluxer created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Wavesoldier created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Depalletizer PTH created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-PTH created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Touch Up created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station VI-1 created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station ICT created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station IB & HS created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station FT created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station CPU Assy created - User: iradi
+2025-01-03 13:28:05 - LayoutRepository - INFO - [station_dao.py:35] - Station Packing created - User: iradi
+2025-01-03 13:28:54 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 13:28:54 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 13:28:54 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-09 & T-10 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-11 & T-12 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-13 & T-14 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-15 & T-16 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Palletizer updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-T1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-DIMM updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-2 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Fluxer updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Wavesoldier updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer PTH updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-PTH updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Touch Up updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station VI-1 updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station ICT updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station IB & HS updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station FT updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station CPU Assy updated - User: iradi
+2025-01-03 13:29:04 - LayoutRepository - INFO - [station_dao.py:56] - Station Packing updated - User: iradi
+2025-01-03 13:30:19 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 13:30:23 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 13:30:23 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 13:30:25 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 13:30:25 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 13:30:25 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 13:30:44 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 13:30:44 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 13:30:44 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: u4L59ozSkOFEO7l - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Loader created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-B created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-B1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-01 & T-02 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-03 & T-04 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-05 & T-06 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-07 & T-08 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-09 & T-10 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-11 & T-12 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-B1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-B2 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-B1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Heller-B1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station AXXON created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-B2 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station GKG-T created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station SPI-T1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-13 & T-14 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station NPX T-15 & T-16 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-T1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-T2 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Fuzion-T3 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-T1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Heller-T1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station AOI-T2 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Router created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station VI-1 created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station ICT created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station FT created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station IB & HS created - User: iradi
+2025-01-03 13:36:43 - LayoutRepository - INFO - [station_dao.py:35] - Station Packing created - User: iradi
+2025-01-03 13:36:44 - LayoutRepository - INFO - [layout_endpoint.py:36] - No need to update stations - User: iradi
+2025-01-03 13:36:44 - LayoutRepository - INFO - [layout_endpoint.py:36] - No need to update stations - User: iradi
+2025-01-03 13:36:52 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 13:36:52 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 13:37:07 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 13:37:07 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 13:37:07 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: D8H9MY4AItBypSw - User: iradi
+2025-01-03 14:28:56 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 14:29:03 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 14:29:03 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 14:29:06 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 14:29:06 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 14:29:06 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 14:40:27 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:03:42 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:06:03 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 15:06:03 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 15:06:06 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:06:11 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 15:06:13 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:08:42 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'area' - User: iradi
+2025-01-03 15:11:03 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'id' - User: iradi
+2025-01-03 15:13:05 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:13:34 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:13:48 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'id' - User: iradi
+2025-01-03 15:17:56 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'InstrumentedList' object has no attribute 'records' - User: iradi
+2025-01-03 15:20:09 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'InstrumentedList' object has no attribute 'records' - User: iradi
+2025-01-03 15:20:30 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'id' - User: iradi
+2025-01-03 15:21:43 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 15:21:53 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 15:21:53 - LayoutRepository - INFO - [layout_endpoint.py:115] - Layouts found: 14 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:21:59 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:40 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:22:41 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:48 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-03 15:23:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-03 15:29:00 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 15:29:00 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 15:29:00 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 15:29:11 - LayoutRepository - INFO - [layout_endpoint.py:142] - Operations found: 64 - User: iradi
+2025-01-03 15:29:11 - LayoutRepository - INFO - [layout_endpoint.py:149] - Areas found: 7 - User: iradi
+2025-01-03 15:29:11 - LayoutRepository - INFO - [layout_endpoint.py:90] - Layout found: cz3w72P2t0Comnx - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-09 & T-10 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-11 & T-12 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-13 & T-14 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-15 & T-16 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Palletizer updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-T1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-DIMM updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-2 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Fluxer updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Wavesoldier updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer PTH updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-PTH updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station Touch Up updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station VI-1 updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station ICT updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station IB & HS updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station FT updated - User: iradi
+2025-01-03 15:29:59 - LayoutRepository - INFO - [station_dao.py:56] - Station CPU Assy updated - User: iradi
+2025-01-03 15:30:00 - LayoutRepository - INFO - [station_dao.py:56] - Station Packing updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-09 & T-10 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-11 & T-12 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-13 & T-14 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-15 & T-16 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Palletizer updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-T1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-DIMM updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-2 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Fluxer updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Wavesoldier updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer PTH updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-PTH updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station Touch Up updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station VI-1 updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station ICT updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station IB & HS updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station FT updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:56] - Station CPU Assy updated - User: iradi
+2025-01-03 15:30:12 - LayoutRepository - INFO - [station_dao.py:46] - Station 4vTaSHKJKLNh0KH deleted - User: iradi
+2025-01-03 15:30:18 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Loader updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-B updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-B1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-01 & T-02 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-03 & T-04 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-05 & T-06 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-07 & T-08 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-B1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-B1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-B2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station GKG-T updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station SPI-T1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-09 & T-10 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-11 & T-12 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-13 & T-14 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station NPX T-15 & T-16 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-T2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Palletizer updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Heller-T1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-T2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Radial updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Fuzion-DIMM updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station JUKI-2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station FACC-2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-2 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Manual Assy-3 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Fluxer updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Wavesoldier updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Depalletizer PTH updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station AOI-PTH updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station Touch Up updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station VI-1 updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station ICT updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station IB & HS updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station FT updated - User: iradi
+2025-01-03 15:32:55 - LayoutRepository - INFO - [station_dao.py:56] - Station CPU Assy updated - User: iradi
+2025-01-03 15:33:03 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:34:38 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: name 'serialize_layout' is not defined - User: iradi
+2025-01-03 15:37:31 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:57] - SQLAlchemy Error: ORM mapped entity or attribute "StationModel.operation" does not link from relationship "CycleTimeTakeModel.records". - User: iradi
+2025-01-03 15:41:37 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 15:45:58 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
+2025-01-03 16:29:39 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
