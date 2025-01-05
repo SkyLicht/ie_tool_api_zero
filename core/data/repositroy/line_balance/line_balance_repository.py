@@ -1,4 +1,5 @@
 import json
+from typing import List, Dict
 
 from fastapi import HTTPException
 
@@ -12,6 +13,30 @@ from core.data.models.it_tool_orm_models import UserModel, CycleTimeTakeModel, C
 from core.logger_manager import LoggerManager
 from core.utils.date_utils import get_iso_week_number
 from core.utils.ie_utils import calculate_work_plan_residuals
+
+
+def serialize_record(record):
+    if record.station is None:
+        return None
+
+    return {
+        "id": record.id,
+        "station_id": record.station_id,
+        "cycle_time": record.cycle_time,
+        "index": record.station.index,
+        "area": {
+            "id": record.station.area.id,
+            "index": record.station.area.index,
+            "name": record.station.area.name,
+            "section": record.station.area.section,
+        },
+        "station": {
+            "id": record.station.id,
+            "operation_id": record.station.operation.id,
+            "operation_name": record.station.operation.label,
+            "is_automatic": record.station.operation.is_automatic,
+        }
+    }
 
 
 class LineBalanceRepository:
@@ -158,30 +183,6 @@ class LineBalanceRepository:
                 "updated_at": str(work_plan.updated_at),
             }
 
-        def serialize_record(record):
-
-            if record.station is None:
-                return None
-
-            return {
-                "id": record.id,
-                "station_id": record.station_id,
-                "cycle_time": record.cycle_time,
-                "index": record.station.index,
-                "area": {
-                    "id": record.station.area.id,
-                    "index": record.station.area.index,
-                    "name": record.station.area.name,
-                    "section": record.station.area.section,
-                },
-                "station": {
-                    "id": record.station.id,
-                    "operation_id": record.station.operation.id,
-                    "operation_name": record.station.operation.label,
-                    "is_automatic": record.station.operation.is_automatic,
-                }
-            }
-
         def serialize_take(take):
             return {
                 "id": take.id,
@@ -220,8 +221,53 @@ class LineBalanceRepository:
             "takes": [serialize_take(take) for take in orm.takes],
         }
 
-
         # print(json.dumps(line_balance.get('takes'), indent=4))
 
-
         return line_balance
+
+    def delete_take(self, take_id):
+        pass
+
+    def create_take(self, line_balance_id):
+        line = self.line_balance_dao.get_line_from_line_balance(line_balance_id)
+        if not line:
+            raise HTTPException(status_code=404, detail=f"Line balance {line_balance_id} not found")
+
+        work_plan = self.work_plan_dao.get_work_plan_by_line_id(line.id)
+
+        if not work_plan:
+            raise HTTPException(status_code=404, detail=f"Work plans for line {line.name} not found")
+
+        line_balance = self.take_dao.create(CycleTimeTakeModel(
+            line_balance_id=line_balance_id,
+            user_id=self.user.id,
+            work_plan_id=work_plan.id
+        ))
+        return {
+            "id": line_balance,
+        }
+
+    def get_takes_by_layout(self, layout_id) -> List[Dict]:
+        orm_takes = self.take_dao.get_by_line_balance_id(layout_id)
+
+        if not orm_takes:
+            raise HTTPException(status_code=404, detail=f"Line balance takes for layout {layout_id} not found")
+
+        return [
+            {
+                "id": take.id,
+                "work_plan_id": take.work_plan_id,
+                "user_id": take.user_id,
+                'user_name': take.user.username,
+                "created_at": str(take.created_at),
+                "updated_at": str(take.updated_at),
+            } for take in orm_takes
+        ]
+
+    def get_cycle_times_by_take_id(self, take_id):
+        orm = self.cycle_time_dao.get_all_by_take_id(take_id)
+
+        if not orm:
+            return []
+
+        return [serialize_record(record) for record in orm]

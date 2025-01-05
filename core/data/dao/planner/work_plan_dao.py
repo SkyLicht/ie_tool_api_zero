@@ -1,5 +1,6 @@
 from typing import List
 
+from sqlalchemy import desc, column
 from sqlalchemy.orm import joinedload
 
 from core.data.models.it_tool_orm_models import WorkPlanModel, LineModel
@@ -44,3 +45,6 @@ class WorkPlanDAO:
             joinedload(WorkPlanModel.line).joinedload(LineModel.factory)
         )
                 .filter(WorkPlanModel.line_id == line_id, WorkPlanModel.str_date == str_date).first())
+
+    def get_work_plan_by_line_id(self, line_id: str) -> WorkPlanModel:
+        return self.db.query(WorkPlanModel).filter(WorkPlanModel.line_id == line_id).order_by(desc(WorkPlanModel.str_date)).first()

@@ -2246,3 +2246,71 @@ version
 2025-01-03 15:41:37 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
 2025-01-03 15:45:58 - LineBalanceRepository - ERROR - [line_balance_endpoint.py:60] - Unexpected Error: 'NoneType' object has no attribute 'index' - User: iradi
 2025-01-03 16:29:39 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 20:04:45 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 20:59:45 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-03 20:59:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-04 12:45:48 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-04 13:49:08 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 13:50:28 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 13:50:41 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 13:51:11 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 21:29:58 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 21:49:59 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:50:25 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:51:05 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:52:53 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 21:53:07 - LineRepository - INFO - [line_repository.py:21] - Lines found: 14 - User: iradi
+2025-01-04 22:51:09 - DatabaseLogger - INFO - [user_repository.py:78] - User found: iradi - User: SYSTEM
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=1 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi
+2025-01-04 23:30:34 - WorkDayRepository - INFO - [work_plan_repository.py:39] - WorkPlanRepository.get_work_plans_by_id: orm_list=0 - User: iradi

@@ -4,9 +4,13 @@ from datetime import timedelta
 import jwt
 from fastapi import FastAPI, Depends, HTTPException, Request
 from fastapi.security import OAuth2PasswordRequestForm
+from jwt import DecodeError
+from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
+from sqlalchemy.util import NoneType
 from starlette import status
 from starlette.middleware.cors import CORSMiddleware
+from starlette.responses import JSONResponse
 
 from core.api.dependency import get_scoped_db_session
 from core.api.endpoints import user_endpoint, router_endpoint
@@ -18,8 +22,6 @@ from core.auth.security import authenticate_user, ACCESS_TOKEN_EXPIRE_MINUTES, c
 from core.data.schemas.token_schema import Token
 from core.db.ie_tool_db import IETOOLDBConnection
 from core.logger_manager import LoggerManager
-
-
 app = FastAPI()
 # Allow CORS for localhost:3000
 app.add_middleware(
@@ -33,22 +35,24 @@ app.add_middleware(
 
 @app.middleware("http")
 async def db_session_middleware(request: Request, call_next):
+
+
     db = IETOOLDBConnection().get_session()
     # get user
     start_time = time.time()  # Record the start time of the request
-
+    print("middleware",request.headers)
 
     # Extract the Authorization header
     auth_header = request.headers.get("authorization")
     user = 'UNKNOWN'
 
-    if auth_header and auth_header.startswith("Bearer "):
+    if auth_header:#and auth_header.startswith("Bearer "):
         user: str = jwt.decode(auth_header.split(" ")[1], SECRET_KEY, algorithms=[ALGORITHM]).get("sub")
 
 
 
 
-    logger = LoggerManager.get_logger(name="FastAPI", log_file_name="request", username=user)
+    _logger = LoggerManager.get_logger(name="FastAPI", log_file_name="request", username=user)
     try:
         request.state.db = db
 
@@ -59,7 +63,7 @@ async def db_session_middleware(request: Request, call_next):
         process_time = time.time() - start_time
 
         # Log the request information and response details
-        logger.info(
+        _logger.info(
             "Request: method=%s, url=%s, client=%s, status_code=%s, process_time=%.2f seconds",
             request.method,
             request.url.path,
@@ -83,6 +87,81 @@ async def db_session_middleware(request: Request, call_next):
         #     str(e)
         # )
     return response
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    """
+    This handler intercepts any HTTPException raised anywhere in the app.
+    You can still raise custom HTTPExceptions in your routes or repositories,
+    and they will be handled here.
+    """
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"HTTPException: {exc.detail} (status: {exc.status_code})")
+    return JSONResponse(
+        status_code=exc.status_code,
+        content={"detail": exc.detail}
+    )
+
+
+@app.exception_handler(SQLAlchemyError)
+async def sqlalchemy_error_handler(request: Request, exc: SQLAlchemyError):
+    """
+    This handler intercepts any SQLAlchemy error (e.g., IntegrityError, OperationalError).
+    """
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"SQLAlchemy Error: {str(exc)}")
+    return JSONResponse(
+        status_code=400,
+        content={"detail": "A database error occurred."}
+    )
+
+
+@app.exception_handler(PermissionError)
+async def permission_error_handler(request: Request, exc: PermissionError):
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"Permission Error: {str(exc)}")
+    return JSONResponse(
+        status_code=403,
+        content={"detail": "Permission denied."}
+    )
+
+
+@app.exception_handler(ValueError)
+async def value_error_handler(request: Request, exc: ValueError):
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"ValueError: {str(exc)}")
+    return JSONResponse(
+        status_code=422,
+        content={"detail": str(exc)}
+    )
+
+
+@app.exception_handler(Exception)
+async def generic_exception_handler(request: Request, exc: Exception):
+    """
+    This is a 'catch-all' handler. It will catch any exception that isn't
+    handled by the more specific exception handlers above.
+    """
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"Unhandled Exception: {str(exc)}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "An unexpected error occurred."}
+    )
+
+
+@app.exception_handler(TypeError)
+async def type_error_handler(request: Request, exc: TypeError):
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"TypeError: {str(exc)}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "An unexpected error occurred."}
+    )
+
+#AttributeError: 'NoneType' object has no attribute 'commit'
+
+@app.exception_handler(DecodeError)
+async def decode_error_handler(request: Request, exc: DecodeError):
+    LoggerManager.get_logger(name="Error", log_file_name="api", username='UNKNOWN').error(f"DecodeError: {str(exc)}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "An unexpected error occurred."}
+    )
 
 app.include_router(
     prefix='/api/v1',

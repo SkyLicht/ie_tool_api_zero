@@ -55,6 +55,19 @@ class LineBalanceDAO:
         except SQLAlchemyError as e:
             raise e
 
+
+    def is_line_balance_exists(self, line_balance_id: str) -> bool:
+        try:
+            return self.session.query(LineBalanceModel).filter_by(id=line_balance_id).first() is not None
+        except SQLAlchemyError as e:
+            raise e
+
+    def get_line_from_line_balance(self, line_balance_id: str)-> LineModel:
+        try:
+            return self.session.query(LineBalanceModel).filter_by(id=line_balance_id).first().layout.line
+        except SQLAlchemyError as e:
+            raise e
+
     def get_all(self):
         pass
 
