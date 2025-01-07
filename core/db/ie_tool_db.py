@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, event
 from sqlalchemy.exc import SQLAlchemyError
 
 from sqlalchemy.orm import declarative_base
@@ -39,7 +39,7 @@ class IETOOLDBConnection:
             self.engine = create_engine(
                 self.DATABASE_URL,
                 connect_args={"check_same_thread": False},
-                echo=False
+                echo=False,
             )
         except SQLAlchemyError as e:
             # You could log the error or handle it in another way, as needed
@@ -52,6 +52,16 @@ class IETOOLDBConnection:
         except SQLAlchemyError as e:
             print(f"[Error] Failed to create tables: {e}")
             raise
+
+        # Listen for the "connect" event, so that every new connection
+        # automatically executes PRAGMA foreign_keys = ON.
+        @event.listens_for(self.engine, "connect")
+        def set_sqlite_pragma(dbapi_connection, connection_record):
+            cursor = dbapi_connection.cursor()
+            cursor.execute("PRAGMA foreign_keys=ON;")
+            cursor.close()
+
+        Base.metadata.create_all(bind=self.engine)
 
         # Create a session factory
         self.SessionFactory = sessionmaker(

@@ -13,6 +13,17 @@ class LineRepository:
         self.logger = LoggerManager.get_logger(name="LineRepository", log_file_name="db", username=user.username)
         self.line_dao = LineDAO(session, self.logger)
 
+    def __enter__(self):
+        # Perform setup actions, e.g., open a database connection
+        # print("Entering context and setting up resources.")
+        return self  # Return the object to be used in the with block
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        # Perform cleanup actions, e.g., close the database connection
+        # print("Exiting context and cleaning up resources.")
+        # Handle exceptions if necessary; return True to suppress them, False to propagate
+        return False
+
     def get_factories_lines(self):
 
         _lines = self.line_dao.get_all_with_factory()

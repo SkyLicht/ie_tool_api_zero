@@ -839,7 +839,7 @@ class CycleTimeTakeModel(Base):
 
     id = Column(String(16), primary_key=True, default=generate_custom_id)
     work_plan_id = Column(String(16), ForeignKey("planner_work_plan.id"), nullable=False)
-    line_balance_id = Column(String(16), ForeignKey("ct_line_balances.id", ondelete="CASCADE"), nullable=False)
+    line_balance_id = Column(String(16), ForeignKey("ct_line_balances.id"), nullable=False)
     user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False)
     # Audit fields for creation and modification tracking
     created_at = Column(DateTime, default=datetime.now(timezone.utc), nullable=False)
@@ -863,7 +863,7 @@ class CycleTimeRecordModel(Base):
     # JSON
     cycle_time = Column(JSON, nullable=False)
     user_id = Column(String(16), ForeignKey("api_users.id"), nullable=False)
-    take_id = Column(String(16), ForeignKey("ct_cycle_time_takes.id", ondelete='CASCADE'), nullable=False)
+    take_id = Column(String(16), ForeignKey("ct_cycle_time_takes.id"), nullable=False)
     station_id = Column(String(16), ForeignKey("layout_stations.id"), nullable=False)
 
     # Audit fields for creation and modification tracking

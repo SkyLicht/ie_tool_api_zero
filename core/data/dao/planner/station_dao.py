@@ -1,5 +1,7 @@
+from typing import Type, List
+
 from sqlalchemy.exc import SQLAlchemyError
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
 from core.data.models.it_tool_orm_models import StationModel
 
@@ -12,8 +14,9 @@ class StationDAO:
     def get_all_stations(self):
         return self.session.query(StationModel).all()
 
-    def get_stations_by_layout_id(self, layout_id):
+    def get_stations_by_layout_id(self, layout_id) -> List[Type[StationModel]]:
         return (self.session.query(StationModel)
+                .options(joinedload(StationModel.operation), joinedload(StationModel.area))
                 .filter(StationModel.layout_id == layout_id)
                 .all())
 

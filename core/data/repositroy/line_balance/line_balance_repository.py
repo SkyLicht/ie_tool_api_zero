@@ -1,4 +1,3 @@
-import json
 from typing import List, Dict
 
 from fastapi import HTTPException
@@ -126,15 +125,9 @@ class LineBalanceRepository:
                     "version": line_balance.layout.version,
                     "created_at": str(line_balance.layout.created_at),
                     "updated_at": str(line_balance.layout.updated_at),
-                    "stations": [
-                        {
-                            "id": station.id,
-                            "operation_id": station.operation_id,
-                            "index": station.index,
-                            "label": station.operation.label
-                        } for station in line_balance.layout.stations
-                    ]
                 },
+                "takes": [{"id": take.id} for take in line_balance.takes],
+
                 "created_at": str(line_balance.created_at),
                 "updated_at": str(line_balance.updated_at),
             } for line_balance in line_balances
@@ -225,10 +218,7 @@ class LineBalanceRepository:
 
         return line_balance
 
-    def delete_take(self, take_id):
-        pass
-
-    def create_take(self, line_balance_id):
+    def create_take(self, line_balance_id, stations_id: List[str]):
         line = self.line_balance_dao.get_line_from_line_balance(line_balance_id)
         if not line:
             raise HTTPException(status_code=404, detail=f"Line balance {line_balance_id} not found")
@@ -241,28 +231,40 @@ class LineBalanceRepository:
         line_balance = self.take_dao.create(CycleTimeTakeModel(
             line_balance_id=line_balance_id,
             user_id=self.user.id,
-            work_plan_id=work_plan.id
+            work_plan_id=work_plan.id,
+            records=[
+                CycleTimeRecordModel(
+                    cycle_time=[0],
+                    user_id=self.user.id,
+                    station_id=station_id,
+                ) for station_id in stations_id
+            ]
         ))
         return {
             "id": line_balance,
         }
 
     def get_takes_by_layout(self, layout_id) -> List[Dict]:
-        orm_takes = self.take_dao.get_by_line_balance_id(layout_id)
+        _orm = self.take_dao.get_by_line_balance_id(layout_id)
+        _orm.sort(key=lambda x: x.created_at)
 
-        if not orm_takes:
+        if not _orm:
             raise HTTPException(status_code=404, detail=f"Line balance takes for layout {layout_id} not found")
 
-        return [
+        _takes = [
             {
                 "id": take.id,
                 "work_plan_id": take.work_plan_id,
+                "index": index,  # Adding index here
                 "user_id": take.user_id,
-                'user_name': take.user.username,
+                "user_name": take.user.username,
                 "created_at": str(take.created_at),
                 "updated_at": str(take.updated_at),
-            } for take in orm_takes
+            }
+            for index, take in enumerate(_orm, start=1)  # Start index from 1 (or 0 if needed)
         ]
+
+        return _takes
 
     def get_cycle_times_by_take_id(self, take_id):
         orm = self.cycle_time_dao.get_all_by_take_id(take_id)
@@ -271,3 +273,33 @@ class LineBalanceRepository:
             return []
 
         return [serialize_record(record) for record in orm]
+
+    def delete_line_balance(self, line_balance_id):
+        self.line_balance_dao.delete_by_id(line_balance_id)
+
+    def delete_take(self, take_id):
+        self.take_dao.delete_by_id(take_id)
+
+    def get_stations_by_line_balance(self, line_balance_id):
+        _orm = self.line_balance_dao.get_by_id(line_balance_id)
+        if not _orm:
+            raise HTTPException(status_code=404, detail=f"Line balance {line_balance_id} not found")
+
+
+        _stations = [
+            {
+                "id": station.id,
+                "layout_id": station.layout_id,
+                "index": station.index,
+                "operation_id": station.operation_id,
+                "operation_name": station.operation.label,
+                "is_automatic": station.operation.is_automatic,
+                "area_id": station.area_id,
+                "area_name": station.area.name,
+                "area_section": station.area.section,
+            } for station in _orm.layout.stations
+        ]
+
+        _stations.sort(key=lambda x: x['index'])
+
+        return _stations

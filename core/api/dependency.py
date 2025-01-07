@@ -8,15 +8,19 @@ from starlette import status
 
 from core.auth.security import oauth2_scheme, SECRET_KEY, ALGORITHM
 from core.data.models.it_tool_orm_models import UserModel
+from core.data.repositroy.layout.layout_endpoint import LayoutRepository
 from core.data.repositroy.line_balance.line_balance_repository import LineBalanceRepository
+from core.data.repositroy.planner.line_repository import LineRepository
 from core.data.repositroy.planner.work_day_repository import WorkDayRepository
 from core.data.repositroy.planner.work_plan_repository import WorkPlanRepository
 from core.data.repositroy.user_repository import UserRepository
 from core.db.ie_tool_db import IETOOLDBConnection
 from core.logger_manager import LoggerManager
 
+
 def get_db(request: Request):
     return request.state.db
+
 
 def get_scoped_db_session():
     db = IETOOLDBConnection().ScopedSession  # Get the ScopedSession instance
@@ -54,6 +58,7 @@ def get_current_user(
         raise HTTPException(status_code=401, detail="User not found")
     return user
 
+
 # def check_permission(required_roles: List[str]):
 #     """
 #     Dependency that checks if the user has at least one of the required roles.
@@ -80,4 +85,20 @@ def get_work_plan_repository(db: Session = Depends(get_db), user: UserModel = De
 
 def get_line_balance_repository(db: Session = Depends(get_db), user: UserModel = Depends(get_current_user)):
     with LineBalanceRepository(db, user) as repo:
+        yield repo
+
+
+def get_line_repository(
+        db: Session = Depends(get_db),
+        user: UserModel = Depends(get_current_user)
+):
+    with LineRepository(db, user) as repo:
+        yield repo
+
+
+def get_layout_repository(
+        db: Session = Depends(get_db),
+        user: UserModel = Depends(get_current_user)
+):
+    with LayoutRepository(db, user) as repo:
         yield repo

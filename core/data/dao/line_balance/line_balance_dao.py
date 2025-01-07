@@ -76,3 +76,16 @@ class LineBalanceDAO:
             return self.session.query(LineBalanceModel).filter_by(week=week).all()
         except SQLAlchemyError as e:
             raise e
+
+    def delete_by_id(self, line_balance_id):
+        try:
+            # Fetch the LineBalanceModel instance
+            line_balance = self.session.query(LineBalanceModel).filter_by(id=line_balance_id).first()
+            if line_balance:
+                self.session.delete(line_balance)  # This triggers cascading delete
+                self.session.commit()
+            else:
+                raise ValueError(f"LineBalance with ID {line_balance_id} not found")
+        except SQLAlchemyError as e:
+            self.session.rollback()
+            raise e

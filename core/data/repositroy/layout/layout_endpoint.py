@@ -16,6 +16,17 @@ class LayoutRepository:
         self.operation_dao = OperationDAO(session, self.logger)
         self.area_dao = AreaDAO(session, self.logger)
 
+    def __enter__(self):
+        # Perform setup actions, e.g., open a database connection
+        # print("Entering context and setting up resources.")
+        return self  # Return the object to be used in the with block
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        # Perform cleanup actions, e.g., close the database connection
+        # print("Exiting context and cleaning up resources.")
+        # Handle exceptions if necessary; return True to suppress them, False to propagate
+        return False
+
     def create_layout_by_line_id(self, line_id: str):
         return self.layout_dao.create_layout_by_line_id(line_id, self.user.id)
 
@@ -154,3 +165,8 @@ class LayoutRepository:
             "operations": _operations,
             "areas": _areas
         }
+
+    def get_stations_by_layout_id(self, by_layout_id: str):
+        _orm = self.station_dao.get_stations_by_layout_id(by_layout_id)
+        _orm.sort(key=lambda x: x.index)
+        return _orm

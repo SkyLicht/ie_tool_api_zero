@@ -1,10 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
-from sqlalchemy.orm import Session
 
-from core.api.dependency import get_scoped_db_session, get_current_user
+from core.api.dependency import get_line_repository, get_layout_repository
 from core.auth.security import check_permission
-from core.data.models.it_tool_orm_models import UserModel
 from core.data.repositroy.layout.layout_endpoint import LayoutRepository
 from core.data.repositroy.planner.line_repository import LineRepository
 
@@ -15,18 +13,7 @@ router = APIRouter(
 )
 
 
-def get_line_repository(
-        db: Session = Depends(get_scoped_db_session),
-        user: UserModel = Depends(get_current_user)
-):
-    return LineRepository(db, user)
 
-
-def get_layout_repository(
-        db: Session = Depends(get_scoped_db_session),
-        user: UserModel = Depends(get_current_user)
-):
-    return LayoutRepository(db, user)
 
 
 @router.get("/get_lines")
@@ -87,7 +74,16 @@ async def get_stations(
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
-
+@router.get("/get_stations_by_layout_id")
+async def get_station_by_layout_id(
+        layout_id: str,
+        layout_repo: LayoutRepository = Depends(get_layout_repository),
+):
+    try:
+        check_permission(layout_repo.user, ["*"], ['admin', 'read'])
+        return layout_repo.get_stations_by_layout_id(layout_id)
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=str(e))
 
 @router.get("/get_operations_areas")
 async def get_operations(
