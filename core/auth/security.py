@@ -19,10 +19,11 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 1 week
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-logger_db = LoggerManager.get_logger(name="DatabaseLogger", log_file="config/logs/db.log", username="SYSTEM")
+
 
 
 def authenticate_user(db: Session, username: str, password: str) -> Optional[UserModel]:
+    logger_db = LoggerManager.get_logger(name="DatabaseLogger", log_file_name='app', username="SYSTEM")
     user_repo = UserRepository(db, logger_db)
     user = user_repo.get_user_by_username(username)
     if not user:

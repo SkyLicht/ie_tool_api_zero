@@ -2,9 +2,10 @@ import argparse
 
 from core.db.features import create_tables, crete_default_permissions, create_default_roles, create_admin_user, \
     create_default_router_access, get_user_by_username, create_factories_form_json, create_lines_from_json, \
-    create_platforms_from_json
+    create_platforms_from_json, create_user_one
 
 if __name__ == "__main__":
+
 
     args = [
         'create_tables',

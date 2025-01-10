@@ -15,7 +15,7 @@ from core.data.schemas.user_schema import UserCreate
 from core.db.ie_tool_db import IETOOLDBConnection
 from core.logger_manager import LoggerManager
 
-logger_db = LoggerManager.get_logger(name="DatabaseLogger", log_file="config/logs/db.log", username="SYSTEM")
+logger_db = LoggerManager.get_logger(name="DatabaseLogger", log_file_name='db', username="SYSTEM")
 
 
 def create_tables():
@@ -109,6 +109,11 @@ def create_admin_user():
     repo.add_route_to_user("guest", "/api/v1/role", "admin")
     repo.add_route_to_user("guest", "/api/v1/permission", "admin")
     repo.add_route_to_user("guest", "/api/v1/router-access", "admin")
+
+def create_user_one():
+    repo = UserRepository(IETOOLDBConnection().get_session(), logger_db)
+    user_data = UserCreate(username="one", password="one", role_name="editor")
+    repo.create_user(user_data)
 
 
 def get_user_by_username(username: str) -> UserModel:
@@ -216,3 +221,7 @@ def create_platforms_from_json():
     except FileNotFoundError:
         logger_db.error("platforms.json file not found")
         return
+
+
+if __name__ == '__main__':
+    pass

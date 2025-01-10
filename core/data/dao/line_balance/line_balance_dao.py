@@ -4,7 +4,7 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session, joinedload
 
 from core.data.models.it_tool_orm_models import LineBalanceModel, StationModel, LayoutModel, LineModel, \
-    CycleTimeTakeModel, CycleTimeRecordModel, AreaModel
+    CycleTimeTakeModel, CycleTimeRecordModel, AreaModel, WorkPlanModel
 
 
 class LineBalanceDAO:
@@ -48,6 +48,8 @@ class LineBalanceDAO:
                 joinedload(LineBalanceModel.layout).joinedload(LayoutModel.line).joinedload(LineModel.factory),
                 joinedload(LineBalanceModel.takes),
                 joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records),
+                joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.work_plan),
+                joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.work_plan).joinedload(WorkPlanModel.line),
                 joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records).joinedload(CycleTimeRecordModel.station),
                 joinedload(LineBalanceModel.takes).joinedload(CycleTimeTakeModel.records).joinedload(CycleTimeRecordModel.station).joinedload(StationModel.area),
                 joinedload(LineBalanceModel.user),

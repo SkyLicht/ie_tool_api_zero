@@ -41,7 +41,6 @@ async def create_line_balance(
     check_permission(repo.user, ["*"], ['admin', 'edit'])
     return repo.create_line_balance(str_date, line_id)
 
-
 @router.get("/get_by_id")
 async def get_line_balance_by_id(
         line_balance_id: str,
@@ -58,6 +57,14 @@ async def get_all_line_balances_by_week(
 ):
     check_permission(repo.user, ["*"], ['admin', 'edit'])
     return repo.get_all_line_balances_by_week(str_date)
+
+@router.get("/get_line_balances_by_week")
+async def get_all_line_balances_by_week(
+        week: int,
+        repo: LineBalanceRepository = Depends(get_line_balance_repository)
+):
+    check_permission(repo.user, ["*"], ['admin', 'edit'])
+    return repo.get_line_balances_by_week(week)
 
 class CreateTakeBody(BaseModel):
     line_balance_id: str
@@ -116,3 +123,14 @@ async def get_stations_by_line_balance(
 ):
     check_permission(repo.user, ["*"], ['admin', 'edit'])
     return repo.get_stations_by_line_balance(line_balance_id)
+
+class UpdateTakeBody(BaseModel):
+    record_id: str
+    cycles: list[int]
+@router.patch('/update_record_by_id')
+async def update_take(
+        body: UpdateTakeBody,
+        repo: LineBalanceRepository = Depends(get_line_balance_repository)
+):
+    check_permission(repo.user, ["*"], ['admin', 'edit'])
+    repo.update_cycle_time(body.record_id, body.cycles)

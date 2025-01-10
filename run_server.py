@@ -4,8 +4,7 @@ import uvicorn
 
 from core.logger_manager import LoggerManager
 
-# Initialize the logger
-app_logger = LoggerManager.get_logger(name="FastApi", log_file="api", username="SYSTEM")
+logger = LoggerManager.get_logger(name="SERVER", log_file_name="app", username='UNKNOWN')
 
 def start_server():
     _host = None
@@ -61,18 +60,23 @@ def start_server():
 
 
     try:
-        app_logger.info(f"Starting server on {_host}:{_port}")
+
+        logger.info('Starting server...')
+
         uvicorn.run(
             "core.api.main:app",
             host=_host,
             port=_port,
             reload=_reload  # Remove reload=True in production or set in config.ini
         )
-        app_logger.info("Server ended")
+
+        logger.info('Server started.')
+
+
+
     except Exception as e:
-        app_logger.error(f"Error starting server: {e}")
-
-
+        logger.error(e)
+        pass
 
 
 if __name__ == "__main__":

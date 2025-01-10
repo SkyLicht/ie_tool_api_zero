@@ -1,5 +1,6 @@
 from typing import List, Type
 
+from fastapi import HTTPException
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import Session
 
@@ -31,4 +32,16 @@ class LineBalanceCycleTimeDAO:
         try:
             return self.session.query(CycleTimeRecordModel).filter_by(take_id = take_id).all()
         except SQLAlchemyError as e:
+            self.session.rollback()
+            raise e
+
+    def update_by_id(self, record_id: str, cycles: list[int]):
+        try:
+            record = self.session.query(CycleTimeRecordModel).filter_by(id = record_id).first()
+            if not record:
+                raise HTTPException(status_code=404, detail=f"Record not found for id: {record_id}" )
+            record.cycle_time = cycles
+            self.session.commit()
+        except SQLAlchemyError as e:
+            self.session.rollback()
             raise e

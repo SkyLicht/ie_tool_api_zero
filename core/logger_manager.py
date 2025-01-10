@@ -34,7 +34,6 @@ class LoggerManager:
     @classmethod
     def get_logger(cls,
                    name: str = 'AppLogger',
-                   log_file: str = None,
                    log_file_name: str = None,
                    max_file_size: int = 10 * 1024 * 1024,
                    backup_count: int = 3,
@@ -47,7 +46,6 @@ class LoggerManager:
 
         :param log_file_name:
         :param name: The name of the logger (default "AppLogger").
-        :param log_file: Optional path to the log file. If not provided, uses "core.log".
         :param max_file_size: Max size of the log file in bytes before rotation.
         :param backup_count: Number of backups to keep after rotating.
         :param console_level: Logging level for console output (default WARNING).
@@ -58,18 +56,44 @@ class LoggerManager:
 
         # todo: remove log_file
         # todo: validate the log files existence
-        if log_file is None and log_file_name is None:
-            log_file = os.path.join('config', 'logs', 'core.log')
+        # if log_file is None and log_file_name is None:
+        #     log_file = os.path.join('config', 'logs', 'core.log')
 
-        if log_file_name is not None and log_file is None:
+        db_log = os.path.join('data', 'logs', 'db.log')
+        app_log = os.path.join('data', 'logs', 'app.log')
+        api_log = os.path.join('data', 'logs', 'api.log')
+        api_request_log = os.path.join('data', 'logs', 'api_request.log')
+
+        # Check if dirs exist
+        # List of file paths
+        log_files = [db_log, app_log, api_log, api_request_log]
+
+        # Loop through the log files
+        for file_path in log_files:
+            # Get the directory of the file
+            directory = os.path.dirname(file_path)
+
+            # Check if the directory exists, create it if it doesn't
+            if not os.path.exists(directory):
+                os.makedirs(directory, exist_ok=True)  # Create directories if they don't exist
+
+            # Check if the file exists, create it if it doesn't
+            if not os.path.exists(file_path):
+                with open(file_path, 'w') as f:
+                    f.write('')  # Create an empty file
+
+
+        log_file = os.path.join('data', 'logs', 'app.log')
+
+        if log_file_name is not None :
             if log_file_name == 'db':
-                log_file = os.path.join('config', 'logs', 'db.log')
+                log_file = os.path.join('data', 'logs', 'db.log')
             elif log_file_name == 'app':
-                log_file = os.path.join('config', 'logs', 'app.log')
+                log_file = os.path.join('data', 'logs', 'app.log')
             elif log_file_name == 'api':
-                log_file = os.path.join('config', 'logs', 'api.log')
+                log_file = os.path.join('data', 'logs', 'api.log')
             elif log_file_name == 'request':
-                log_file = os.path.join('config', 'logs', 'api_request.log')
+                log_file = os.path.join('data', 'logs', 'api_request.log')
 
 
         with cls._lock:
