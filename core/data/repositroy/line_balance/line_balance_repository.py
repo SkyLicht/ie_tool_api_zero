@@ -21,7 +21,7 @@ def serialize_record(record):
         "id": record.id,
         "station_id": record.station_id,
         "cycle_times": record.cycle_time,
-        "ct": cycle_time,
+        "ct": 0 if cycle_time == 0 else cycle_time / len(record.cycle_time),
         "index": record.station.index,
         "area": {
             "id": record.station.area.id,
@@ -226,7 +226,9 @@ class LineBalanceRepository:
 
         line_balances = self.line_balance_dao.get_all_by_week(week)
 
-        return [
+
+
+        _data =  [
             {
                 "id": line_balance.id,
                 "str_date": line_balance.str_date,
@@ -248,11 +250,15 @@ class LineBalanceRepository:
                 "updated_at": str(line_balance.updated_at),
             } for line_balance in line_balances
         ]
+
+        _data.sort(key=lambda item: item["line_name"])
+
+        return _data
 
     def get_line_balances_by_week(self, week: int):
         line_balances = self.line_balance_dao.get_all_by_week(week)
 
-        return [
+        _data =  [
             {
                 "id": line_balance.id,
                 "str_date": line_balance.str_date,
@@ -274,6 +280,10 @@ class LineBalanceRepository:
                 "updated_at": str(line_balance.updated_at),
             } for line_balance in line_balances
         ]
+
+        _data.sort(key=lambda item: item["line_name"])
+
+        return _data
 
     def get_line_balance_by_id(self, line_balance_id: str):
         _orm = self.line_balance_dao.get_by_id(line_balance_id)
@@ -303,7 +313,7 @@ class LineBalanceRepository:
             "packing_bottleneck": pth_bottleneck
         }
 
-        print(json.dumps(line_balance.get('takes'), indent=4))
+        # print(json.dumps(line_balance.get('takes'), indent=4))
 
         return line_balance
 
@@ -361,7 +371,7 @@ class LineBalanceRepository:
         if not orm:
             return []
 
-        return [serialize_record(record) for record in orm]
+        return [serialize_record(record) for record in orm].sort(key=lambda x: x['index'])
 
     def delete_line_balance(self, line_balance_id):
         self.line_balance_dao.delete_by_id(line_balance_id)
