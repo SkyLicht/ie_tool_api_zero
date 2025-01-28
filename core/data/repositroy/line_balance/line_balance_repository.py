@@ -122,6 +122,16 @@ def serialize_line(line):
 
 
 def combine_takes(takes):
+
+
+    for t in takes:
+        print(len(t['records']))
+
+    takes.sort(key=lambda take: len(take['records']), reverse=True)
+
+    for t in takes:
+        print(len(t['records']))
+
     if not takes: return []
 
     refactor_records = []
@@ -251,7 +261,7 @@ class LineBalanceRepository:
             } for line_balance in line_balances
         ]
 
-        _data.sort(key=lambda item: item["line_name"])
+        _data.sort(key=lambda item: item['layout']["line_name"])
 
         return _data
 
@@ -281,7 +291,7 @@ class LineBalanceRepository:
             } for line_balance in line_balances
         ]
 
-        _data.sort(key=lambda item: item["line_name"])
+        _data.sort(key=lambda item: item['layout']["line_name"])
 
         return _data
 
@@ -301,6 +311,9 @@ class LineBalanceRepository:
 
         pth_bottleneck = max([item for item in refactor_cycles if item['area']['section'] == "PTH"],
                              key=lambda x: x['last_ct'])
+
+
+
 
         line_balance = {
             "id": _orm.id,
@@ -347,6 +360,7 @@ class LineBalanceRepository:
         _orm = self.take_dao.get_by_line_balance_id(layout_id)
         _orm.sort(key=lambda x: x.created_at)
 
+
         if not _orm:
             raise HTTPException(status_code=404, detail=f"Line balance takes for layout {layout_id} not found")
 
@@ -371,7 +385,10 @@ class LineBalanceRepository:
         if not orm:
             return []
 
-        return [serialize_record(record) for record in orm].sort(key=lambda x: x['index'])
+        _data = [serialize_record(record) for record in orm]
+        _data.sort(key=lambda x: x['index'])
+
+        return _data
 
     def delete_line_balance(self, line_balance_id):
         self.line_balance_dao.delete_by_id(line_balance_id)

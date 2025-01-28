@@ -12,6 +12,6 @@ def calculate_work_plan_residuals(target_oee: float, uph: int,planned_hours: int
 
     uph_target = target_oee * uph
     commit = uph_target * planned_hours
-    cycle_time = 3600 / uph
+    cycle_time = 3600 / uph_target
 
     return round(uph_target,0), round(commit) , round(cycle_time,2)
